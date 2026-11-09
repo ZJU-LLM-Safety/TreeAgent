@@ -1,0 +1,10 @@
+{
+  "description": "Deterministic TreeAgent check with a character tokenizer.",
+  "method": "treeagent",
+  "tokenizer": "character_fixture_only",
+  "section_size": 72,
+  "max_tree_budget": 143,
+  "residual_policy": "child_to_parent_final_segment",
+  "residual_top_k": 4,
+  "residual_item_max_tokens": 96
+}

@@ -1,0 +1,11 @@
+{
+  "uid": "html_websrc_v4_test_8k_numeric_extreme_00000",
+  "context_format": "html",
+  "instructions": "Answer using only the supplied data.\n\nonly the value",
+  "question": "Across the vehicle columns in the supplied HTML comparison tables, what is the smallest numeric amount shown in the Destination field?",
+  "input": "Across all semantic HTML records in the corpus, what is the min Destination value?",
+  "task": "numeric_extreme",
+  "input_sha256": "4ef7a714b8638841870eb2acba2780e5ae6c6590f10a4ee6019c614696124d55",
+  "sample_revision": "sample_contract_v2",
+  "metric_type": "approx_number_match"
+}

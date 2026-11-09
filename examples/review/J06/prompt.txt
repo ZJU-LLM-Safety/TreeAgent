@@ -1,0 +1,253 @@
+Instructions
+Answer using only the supplied data.
+
+only the value
+
+Data
+// @structured-javascript-source {"binding":"module.exports.meta","code_sha256":"d98511daaf1d19589a3f2bd063ec03a2889d1e6a4a750ca276b09559968071f9","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_da03b1f43d0a7af9b314","initializer_sha256":"83512db9a0a73e365f1ab308ee6f5f587d522629bbcdae41dcac7aab8fd2eb32","license":"MIT","native_features":["comment","trailing_comma","unquoted_property_key"],"path":"lib/rules/no-restricted-properties.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":1939,"source_start_byte":424}
+const __structured_javascript_state_da03b1f43d0a7af9b314 = {
+		type: "suggestion",
+
+		docs: {
+			description: "Disallow certain properties on certain objects",
+			recommended: false,
+			url: "https://eslint.org/docs/latest/rules/no-restricted-properties",
+		},
+
+		schema: {
+			type: "array",
+			items: {
+				type: "object",
+				properties: {
+					object: {
+						type: "string",
+					},
+					property: {
+						type: "string",
+					},
+					allowObjects: {
+						type: "array",
+						items: {
+							type: "string",
+						},
+						uniqueItems: true,
+					},
+					allowProperties: {
+						type: "array",
+						items: {
+							type: "string",
+						},
+						uniqueItems: true,
+					},
+					message: {
+						type: "string",
+					},
+				},
+				anyOf: [
+					{
+						required: ["object"],
+					},
+					{
+						required: ["property"],
+					},
+				],
+				not: {
+					anyOf: [
+						{ required: ["allowObjects", "object"] },
+						{ required: ["allowProperties", "property"] },
+					],
+				},
+				additionalProperties: false,
+			},
+			uniqueItems: true,
+		},
+
+		defaultOptions: [],
+
+		messages: {
+			restrictedObjectProperty:
+				// eslint-disable-next-line eslint-plugin/report-message-format -- Custom message might not end in a period
+				"'{{objectName}}.{{propertyName}}' is restricted from being used.{{allowedPropertiesMessage}}{{message}}",
+			restrictedProperty:
+				// eslint-disable-next-line eslint-plugin/report-message-format -- Custom message might not end in a period
+				"'{{propertyName}}' is restricted from being used.{{allowedObjectsMessage}}{{message}}",
+		},
+	};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"ad662f12204d5e0f8637abd6a157bcac63f5a6aa72b63821a7f2bba46a213d6f","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_4db0904dcc8dce7a1706","initializer_sha256":"fb08dc5e97f6633b7514751b77338aca1446bea6b25a255875b129aa1cf5b83b","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-restricted-imports.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":45615,"source_start_byte":45267}
+const __structured_javascript_state_4db0904dcc8dce7a1706 = {
+			code: "import Foo from 'mod';",
+			options: [
+				{
+					patterns: [
+						{
+							group: ["mod"],
+							importNames: ["default"],
+						},
+					],
+				},
+			],
+			errors: [
+				{
+					line: 1,
+					column: 8,
+					endColumn: 11,
+					message:
+						"'default' import from 'mod' is restricted from being used by a pattern.",
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"assertHoverLabelContent","code_sha256":"8a06dea6dc6e1010ddd4d8e61b66971a54ec2ef0587e63f394e9f38a640638bf","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_4ad5be85b869dcdec65a","initializer_sha256":"901fe0dc0f97b018b37edf4fdf393050b574744acf7a155829b1496cbda87d0f","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/hover_label_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":33526,"source_start_byte":33417}
+const __structured_javascript_state_4ad5be85b869dcdec65a = {
+                        nums: 'x: 1\ny: 3\nz: 2\nY',
+                        name: ''
+                    };
+
+// @structured-javascript-source {"binding":"Plotly.newPlot","code_sha256":"04c37909e112bde5e8fbd238d477a39781ba7a999e7803152cd27f1249270261","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_f207d58f801aaf21d64e","initializer_sha256":"c4f3c00fd573d4d8952be4e5a73d81e0dc6fdcf8b4152f4468178fc4c6246947","license":"MIT","native_features":["single_quoted_string","trailing_comma","unquoted_property_key"],"path":"test/jasmine/tests/waterfall_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":56389,"source_start_byte":55998}
+const __structured_javascript_state_f207d58f801aaf21d64e = {
+                data: [{
+                    type: 'waterfall',
+                    y: [ 10, -4, null ],
+                    measure: [ '', '', 'total' ],
+                    texttemplate: '%{delta}',
+                    hovertemplate: '%{delta}',
+                }],
+                layout: {
+                    width: 600,
+                    height: 400
+                }
+            };
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid.errors","code_sha256":"9048d8e1d451760ce4b3c505d83de28ab622804ea57edefe21647fe0cf18ac99","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_993125cd7ab5fd9a7a85","initializer_sha256":"027f4e4d038f8353d32361e379ad29d5c4c4cb888e12c58158d7ecfa4710cf43","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/key-spacing.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":26025,"source_start_byte":25671}
+const __structured_javascript_state_993125cd7ab5fd9a7a85 = [
+				{
+					messageId: "missingKey",
+					data: { computed: "", key: "key" },
+					line: 2,
+					column: 5,
+				},
+				{
+					messageId: "extraValue",
+					data: { computed: "", key: "key" },
+					line: 2,
+					column: 8,
+				},
+				{
+					messageId: "missingValue",
+					data: { computed: "", key: "foobar" },
+					line: 3,
+					column: 12,
+				},
+			];
+
+// @structured-javascript-source {"binding":"_run","code_sha256":"4eac9c47efd70719637fb7b5f2a041578b14523ea35031a1f678513718f2ea1b","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_78c5b8dfe2c16d2f67d3","initializer_sha256":"3ddaa0e7c52ae27584105cfd8d21ac007d6f9b33e66432e67090ebbf87e9eb7a","license":"MIT","native_features":["unquoted_property_key"],"path":"test/jasmine/tests/polar_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":67813,"source_start_byte":66958}
+const __structured_javascript_state_78c5b8dfe2c16d2f67d3 = {
+                zoombox: [
+                    [0, 121.352], [88.167, 121.352],
+                    [142.658, -46.352], [0, -150],
+                    [0, -150], [0, 0],
+                    [0, 121.352], [0, 121.352],
+                    [88.167, 121.352], [142.658, -46.352],
+                    [0, -150], [0, -150],
+                    [0, 0], [0, 121.352],
+                    [0, 71.329], [51.823, 71.329],
+                    [83.852, -27.245], [0, -88.16778784387097],
+                    [0, -88.167], [0, 0],
+                    [0, 71.329]
+                ],
+                corners: [
+                    [73.602, 10.771], [65.877, 34.548],
+                    [62.073, 33.312], [69.798, 9.535],
+                    [121.177, 26.229], [113.452, 50.006],
+                    [109.648, 48.770], [117.373, 24.993]
+                ]
+            };
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"16ba588168410da6f6ff1de28cba3503e3ae3417eb14cff39207c62cbd0fbfe2","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_bc454ce03a876f1e5c78","initializer_sha256":"25a98beea867f59e98aa8cf672f123c436ce817a801918c8d67c7c9b6ea8f3f5","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-extra-boolean-cast.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":9370,"source_start_byte":9234}
+const __structured_javascript_state_bc454ce03a876f1e5c78 = {
+			code: "!Boolean((foo, bar()));",
+			output: "!(foo, bar());",
+			errors: [
+				{
+					messageId: "unexpectedCall",
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid.errors","code_sha256":"c20f492ff59d491f2659629dc20eaef5c7ac74793a6e21a13c96ad49966c5d7c","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_c837c94448e9af84acd9","initializer_sha256":"359f1d5b8cc2b9b659a5b8f7aeb99837c4838ec54ee4d1423cc03a842d2603f1","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/key-spacing.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":52083,"source_start_byte":51961}
+const __structured_javascript_state_c837c94448e9af84acd9 = [
+				{
+					messageId: "missingValue",
+					data: { computed: "", key: "foo" },
+					line: 2,
+					column: 9,
+				},
+			];
+
+// @structured-javascript-source {"binding":"output","code_sha256":"b68b6b8ff14442ac055477e730d5fcc60c0241ac6fcc00f1e19a513f16c5074e","commit":"27e70ddf91e95c40d03bca7b2bac5a212e4c4151","id":"jssstate_937965cdc9553530e646","initializer_sha256":"e2ace5023c3df39d2050a77a2e09a2234210d7a18bd483274337b5e5712980f3","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/rollup.treeshake.config.js","repository":"mrdoob/three.js","repository_url":"https://github.com/mrdoob/three.js","source_end_byte":2511,"source_start_byte":2417}
+const __structured_javascript_state_937965cdc9553530e646 = [
+			{
+				format: 'esm',
+				file: 'test/treeshake/index.webgpu.nodes.bundle.min.js'
+			}
+		];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"1da2bb445cbcda075a2390ab712ce42f2a58b8da02a032b47cdfde02333646bf","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_de673424fee24b59e95f","initializer_sha256":"36649a3c6adc076d0ab7dd152ee99201dc8824c931c7a43dd17e675d3d4a35dd","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/curly.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":30658,"source_start_byte":30446}
+const __structured_javascript_state_de673424fee24b59e95f = {
+			code: "if (foo) { bar; }\n++baz;",
+			output: "if (foo)  bar; \n++baz;",
+			options: ["multi"],
+			errors: [
+				{
+					messageId: "unexpectedCurlyAfterCondition",
+					data: { name: "if" },
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"e3397493b0e0ba6be29532c61fdd6bd415c1b2f7cb5cca70fdaa15e9ee3ed83c","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_5d5bb4074a1c181ec656","initializer_sha256":"4926b037278b874d63a18690d62ce00393b938cfea42176ba2123473f1316fa1","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-prototype-builtins.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":6281,"source_start_byte":6061}
+const __structured_javascript_state_5d5bb4074a1c181ec656 = {
+			code: "foo?.bar.hasOwnProperty('baz')",
+			languageOptions: { ecmaVersion: 2020 },
+			errors: [
+				{
+					messageId: "prototypeBuildIn",
+					data: { prop: "hasOwnProperty" },
+					suggestions: [],
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTesterTypeScript.run.valid","code_sha256":"05fd130305172a37c3267e326d62bc36d83d6c36d4cd39948d72aab5f7395951","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_e52e7d39214fd285dd67","initializer_sha256":"2fa547dc0210978fb47fcb4c2db05ddff86d28e46c229eb0f392992c0ec32399","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-restricted-globals.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":22891,"source_start_byte":22801}
+const __structured_javascript_state_e52e7d39214fd285dd67 = {
+			code: "class Derived implements Test1, Test2 {}",
+			options: ["Test1", "Test2"],
+		};
+
+// @structured-javascript-source {"binding":"it","code_sha256":"51f6c7b26fbe3ce504862770b859ffffbf743dea07aead88672ccb6af37332e6","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_2e1dd01c182ebe47ca2a","initializer_sha256":"775a22272f2a256d09246ced1eb86bd3dc83997d69092235fa3f762a1eaa4097","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/cli.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":34130,"source_start_byte":33915}
+const __structured_javascript_state_2e1dd01c182ebe47ca2a = [
+					{
+						filePath: "./foo.js",
+						output: "bar",
+						messages: [
+							{
+								severity: 2,
+								message: "Fake message",
+							},
+						],
+						errorCount: 1,
+						warningCount: 0,
+					},
+				];
+
+// @structured-javascript-source {"binding":"_update","code_sha256":"cdb38c905016ffc645956f61ccedff6ec52b074b621d7f392b6cf93efdd1a8d1","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_c5dfe09e9a1b424848f9","initializer_sha256":"8fe5b819696d13d98971484f5452def9cba6cf52dfe9ae6b45b976a9549586af","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/plots_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":24109,"source_start_byte":23849}
+const __structured_javascript_state_c5dfe09e9a1b424848f9 = [
+                [ { trace: { type: 'A', visible: false } } ],
+                [ { trace: { type: 'A', visible: true } } ],
+                [ { trace: { type: 'B', visible: false } } ],
+                [ { trace: { type: 'C', visible: true } } ]
+            ];
+
+Question
+Within collection module.exports.meta.schema.items.properties in state jssstate_da03b1f43d0a7af9b314, how many records have type equal to "string"? Answer with only the count.

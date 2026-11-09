@@ -1,0 +1,358 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the order requested
+
+Data
+// @structured-javascript-source {"binding":"module.exports.meta","code_sha256":"8b9b2eae8dc4cd70900a8c6a719de483cfc1036aadee2bcc4c2874a3d0da7de1","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_bea74732900eeedf0619","initializer_sha256":"c239cf30af4e3066e4ef963253586d962dae11852e60137378ba8cd1201c171c","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"lib/rules/space-in-parens.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":1864,"source_start_byte":461}
+const __structured_javascript_state_bea74732900eeedf0619 = {
+		deprecated: {
+			message: "Formatting rules are being moved out of ESLint core.",
+			url: "https://eslint.org/blog/2023/10/deprecating-formatting-rules/",
+			deprecatedSince: "8.53.0",
+			availableUntil: "11.0.0",
+			replacedBy: [
+				{
+					message:
+						"ESLint Stylistic now maintains deprecated stylistic core rules.",
+					url: "https://eslint.style/guide/migration",
+					plugin: {
+						name: "@stylistic/eslint-plugin",
+						url: "https://eslint.style",
+					},
+					rule: {
+						name: "space-in-parens",
+						url: "https://eslint.style/rules/space-in-parens",
+					},
+				},
+			],
+		},
+		type: "layout",
+
+		docs: {
+			description: "Enforce consistent spacing inside parentheses",
+			recommended: false,
+			url: "https://eslint.org/docs/latest/rules/space-in-parens",
+		},
+
+		fixable: "whitespace",
+
+		schema: [
+			{
+				enum: ["always", "never"],
+			},
+			{
+				type: "object",
+				properties: {
+					exceptions: {
+						type: "array",
+						items: {
+							enum: ["{}", "[]", "()", "empty"],
+						},
+						uniqueItems: true,
+					},
+				},
+				additionalProperties: false,
+			},
+		],
+
+		messages: {
+			missingOpeningSpace: "There must be a space after this paren.",
+			missingClosingSpace: "There must be a space before this paren.",
+			rejectedOpeningSpace: "There should be no space after this paren.",
+			rejectedClosingSpace: "There should be no space before this paren.",
+		},
+	};
+
+// @structured-javascript-source {"binding":"overrideAll.node.x","code_sha256":"a70ae146e06945ad50475536ab3b3f1b127e519626f9e2d09a0580d36d5b684a","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_bf06c86ac31555a756a6","initializer_sha256":"78588a2de647cb2520807017aa585b9c9f738bde67a3a847d0153f1bc87b1fe3","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"src/traces/sankey/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":3895,"source_start_byte":3736}
+const __structured_javascript_state_bf06c86ac31555a756a6 = {
+                valType: 'data_array',
+                dflt: [],
+                description: 'The normalized horizontal position of the node.'
+            };
+
+// @structured-javascript-source {"binding":"code","code_sha256":"eb8501f930e9d398b5333f3ea4c80cf24b23ac24e696364c210c7e87669972df","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_8734e6fe8fccdf5106b5","initializer_sha256":"c64ee8b10e226f73af93b06693af528524c8750143b92895f78e13583313dca0","license":"MIT","native_features":["trailing_comma"],"path":"tests/lib/linter/linter.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":172726,"source_start_byte":172594}
+const __structured_javascript_state_8734e6fe8fccdf5106b5 = [
+						"alert('test');",
+						"// eslint-disable-next-line no-alert",
+						"alert('test');",
+						"console.log('test');",
+					];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"acba9cfb0a1abf12f5cd0e3bb8379314e2012042259bea2323a6d05a384ed570","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_34196fd330d4cfb60119","initializer_sha256":"90261d6dee4815286d3b7fe1d8e582620615acb13d2e417b3638f877aac78f39","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-callback-return.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":15370,"source_start_byte":15153}
+const __structured_javascript_state_34196fd330d4cfb60119 = {
+			code: "foo.toSorted(function foo() {})",
+			errors: [
+				{
+					messageId: "expectedInside",
+					data: {
+						name: "function 'foo'",
+						arrayMethodName: "Array.prototype.toSorted",
+					},
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"1402eb319798e8f4687a24118a601a87b2c46aa5378423192f4160d8c249d04b","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_341221d59f5b5bcd55b4","initializer_sha256":"d0bab703aa236f6adf40e6df61fdd3b0b4d138bb5f4eaec7c7943b06be0ee3a6","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-undef.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":2861,"source_start_byte":2770}
+const __structured_javascript_state_341221d59f5b5bcd55b4 = {
+			code: "var obj; [obj.a, obj.b] = [0, 1];",
+			languageOptions: { ecmaVersion: 6 },
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run","code_sha256":"bb52c8593abcd7b7639bedbdf9bd089e3cc30008536d07790e8f9d43890922be","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_b5dc2ff01f106fce54ae","initializer_sha256":"1644e92ca856d1b2c3ca4a5b184f7e190fbad639e8406b80d2b2bafac74661cb","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-bitwise.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":2852,"source_start_byte":640}
+const __structured_javascript_state_b5dc2ff01f106fce54ae = {
+	valid: [
+		"a + b",
+		"!a",
+		"a && b",
+		"a || b",
+		"a += b",
+		{ code: "a &&= b", languageOptions: { ecmaVersion: 2021 } },
+		{ code: "a ||= b", languageOptions: { ecmaVersion: 2021 } },
+		{ code: "a ??= b", languageOptions: { ecmaVersion: 2021 } },
+		{ code: "~[1, 2, 3].indexOf(1)", options: [{ allow: ["~"] }] },
+		{ code: "~1<<2 === -8", options: [{ allow: ["~", "<<"] }] },
+		{ code: "a|0", options: [{ int32Hint: true }] },
+		{ code: "a|0", options: [{ allow: ["|"], int32Hint: false }] },
+	],
+	invalid: [
+		{
+			code: "a ^ b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "^" },
+				},
+			],
+		},
+		{
+			code: "a | b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "|" },
+				},
+			],
+		},
+		{
+			code: "a & b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "&" },
+				},
+			],
+		},
+		{
+			code: "a << b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "<<" },
+				},
+			],
+		},
+		{
+			code: "a >> b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: ">>" },
+				},
+			],
+		},
+		{
+			code: "a >>> b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: ">>>" },
+				},
+			],
+		},
+		{
+			code: "a|0",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "|" },
+				},
+			],
+		},
+		{
+			code: "~a",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "~" },
+				},
+			],
+		},
+		{
+			code: "a ^= b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "^=" },
+				},
+			],
+		},
+		{
+			code: "a |= b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "|=" },
+				},
+			],
+		},
+		{
+			code: "a &= b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "&=" },
+				},
+			],
+		},
+		{
+			code: "a <<= b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: "<<=" },
+				},
+			],
+		},
+		{
+			code: "a >>= b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: ">>=" },
+				},
+			],
+		},
+		{
+			code: "a >>>= b",
+			errors: [
+				{
+					messageId: "unexpected",
+					data: { operator: ">>>=" },
+				},
+			],
+		},
+	],
+};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"4ae4289472cc586271e021668eda31b18b50425b6d2aa9e8e04a26cef11a42df","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_9b1f2c5b7ade7f77d137","initializer_sha256":"4f3d05f2ac7e8287f3d4368c3d7a9f488081fd513e472600eff378d9193166a7","license":"MIT","native_features":["single_quoted_string","trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/camelcase.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":4379,"source_start_byte":4218}
+const __structured_javascript_state_9b1f2c5b7ade7f77d137 = {
+			code: 'import { no_camelcased as camelCased, anotherCamelCased } from "external-module";',
+			languageOptions: { ecmaVersion: 6, sourceType: "module" },
+		};
+
+// @structured-javascript-source {"binding":"templatedArray.captureevents.description","code_sha256":"03a146a758c52229a5903f86342fcd3554a272561b99f51c1535c693ccadf673","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_7535729ae053636e469c","initializer_sha256":"cc597534d15b9e25af98b9515745a3919cf5237f0fbb7ed3202eb19825b644dd","license":"MIT","native_features":["single_quoted_string"],"path":"src/components/annotations/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":17788,"source_start_byte":17326}
+const __structured_javascript_state_7535729ae053636e469c = [
+            'Determines whether the annotation text box captures mouse move',
+            'and click events, or allows those events to pass through to data',
+            'points in the plot that may be behind the annotation. By default',
+            '`captureevents` is *false* unless `hovertext` is provided.',
+            'If you use the event `plotly_clickannotation` without `hovertext`',
+            'you must explicitly enable `captureevents`.'
+        ];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"42928603ebf1a438914484577776e0b0b4646f7cbfa655498e6a15fddd793a55","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_69b44cc33e1ac6d97d47","initializer_sha256":"475f76fd7db6c14e14575c5fdfe2d0ba84a7881fd1137875902250ec630f31e1","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/computed-property-spacing.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":42228,"source_start_byte":41964}
+const __structured_javascript_state_69b44cc33e1ac6d97d47 = {
+			code: "const { [ a]: someProp } = obj;",
+			output: "const { [a]: someProp } = obj;",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 2022 },
+			errors: [
+				{
+					messageId: "unexpectedSpaceAfter",
+					data: { tokenValue: "[" },
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"Plotly.newPlot","code_sha256":"696c016efd86f7f151c7448465167345454f123f8ac9542e49204d1ac915eb5b","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_174078b88636c6a95b00","initializer_sha256":"e0664c952abb7cd8c38d0b591baed02919a6dd47639679c6ddeae1d4959cf543","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/bar_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":92631,"source_start_byte":92469}
+const __structured_javascript_state_174078b88636c6a95b00 = [{
+                type: 'bar',
+                x: [1],
+                y: [2],
+                width: 10,
+                marker: { color: 'red' }
+            }];
+
+// @structured-javascript-source {"binding":"expectedConfigs","code_sha256":"81d36a6c0129ae245d972258ddb2ab052955a5c0cadb5d4b412e3ba526df5852","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_d0ef51f841464f827062","initializer_sha256":"6a37c3d0f3eb744968134eaceff0cc78fced1e338101ca14e0b396a417f6446c","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/tools/config-rule.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":4141,"source_start_byte":3833}
+const __structured_javascript_state_d0ef51f841464f827062 = [
+					{ firstEnum: "always", anotherEnum: "var" },
+					{ firstEnum: "always", anotherEnum: "let" },
+					{ firstEnum: "always", anotherEnum: "const" },
+					{ firstEnum: "never", anotherEnum: "var" },
+					{ firstEnum: "never", anotherEnum: "let" },
+					{ firstEnum: "never", anotherEnum: "const" },
+				];
+
+// @structured-javascript-source {"binding":"refreshUniforms","code_sha256":"4d95bb1c54db77f84b091467e5c09f85a37b922686c2c418f4e80053081f91dc","commit":"27e70ddf91e95c40d03bca7b2bac5a212e4c4151","id":"jssstate_d60693464087c1e9cc8e","initializer_sha256":"98c96470803dadc9737c917c2d874aa2f8e90c74aa1bdac0fab1a7e635d258fb","license":"MIT","native_features":["single_quoted_string"],"path":"src/materials/nodes/manager/NodeMaterialObserver.js","repository":"mrdoob/three.js","repository_url":"https://github.com/mrdoob/three.js","source_end_byte":974,"source_start_byte":24}
+const __structured_javascript_state_d60693464087c1e9cc8e = [
+	'alphaMap',
+	'alphaTest',
+	'anisotropy',
+	'anisotropyMap',
+	'anisotropyRotation',
+	'aoMap',
+	'aoMapIntensity',
+	'attenuationColor',
+	'attenuationDistance',
+	'bumpMap',
+	'clearcoat',
+	'clearcoatMap',
+	'clearcoatNormalMap',
+	'clearcoatNormalScale',
+	'clearcoatRoughness',
+	'color',
+	'dispersion',
+	'displacementMap',
+	'emissive',
+	'emissiveIntensity',
+	'emissiveMap',
+	'envMap',
+	'envMapIntensity',
+	'envMapRotation',
+	'gradientMap',
+	'ior',
+	'iridescence',
+	'iridescenceIOR',
+	'iridescenceMap',
+	'iridescenceThicknessMap',
+	'lightMap',
+	'lightMapIntensity',
+	'map',
+	'matcap',
+	'metalness',
+	'metalnessMap',
+	'normalMap',
+	'normalScale',
+	'opacity',
+	'retroreflectivity',
+	'roughness',
+	'roughnessMap',
+	'sheen',
+	'sheenColor',
+	'sheenColorMap',
+	'sheenRoughnessMap',
+	'shininess',
+	'specular',
+	'specularColor',
+	'specularColorMap',
+	'specularIntensity',
+	'specularIntensityMap',
+	'specularMap',
+	'thickness',
+	'transmission',
+	'transmissionMap'
+];
+
+Question
+In state jssstate_bea74732900eeedf0619 (source state label "module.exports.meta"), object at property path module.exports.meta.messages, return these property values in the listed order: rejectedClosingSpace, missingOpeningSpace. Answer with one value per line and no labels.

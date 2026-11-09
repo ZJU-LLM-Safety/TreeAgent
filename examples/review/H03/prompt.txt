@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+Return the Runtime for these distinct HTML records. Give one value per line in Q1-to-Q4 order, without Q labels or explanations. Q1: the movie where Title is Won't You Be My Neighbor? on movie site 08 page 0800015 Q2: the movie where Title is Avengers: Infinity War on movie site 08 page 0800042 Q3: the movie where Title is Tokyo Story on movie site 08 page 0800045 Q4: the movie where Title is Love, Simon on movie site 08 page 0800068
+
+Question
+Return the Runtime for these distinct HTML records. Give one value per line in Q1-to-Q4 order, without Q labels or explanations. Q1: the movie where Title is Won't You Be My Neighbor? on movie site 08 page 0800015 Q2: the movie where Title is Avengers: Infinity War on movie site 08 page 0800042 Q3: the movie where Title is Tokyo Story on movie site 08 page 0800045 Q4: the movie where Title is Love, Simon on movie site 08 page 0800068

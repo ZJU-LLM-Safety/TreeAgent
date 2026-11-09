@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_dev_32k_record_field_lookup_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the value",
+  "question": "What is the departure country of flight leg 2118?",
+  "input": "What is the departure country of flight leg 2118?",
+  "task": "record_field_lookup",
+  "input_sha256": "3f32f66507c64ea13ab443c190d2a3e8dcbc668eb949b8e2572f64a279b1ccda",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_train_32k_conditional_count_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the integer count",
+  "question": "How many flight legs have departure country code US?",
+  "input": "How many flight legs have departure country code US?",
+  "task": "conditional_count",
+  "input_sha256": "0c8d890e36fa3ef2e1f28033d260cb7723917f659f502956e38e68911fcf1510",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

@@ -1,0 +1,11 @@
+{
+  "uid": "html_websrc_v4_test_8k_groupby_topk_values_00000",
+  "context_format": "html",
+  "instructions": "Answer using only the supplied data.\n\none value per line; do not include counts or explanations",
+  "question": "Across the vehicle columns in the supplied HTML comparison tables, which three distinct Destination values occur most frequently? Count each vehicle column separately.",
+  "input": "Across all semantic HTML records in the corpus, which three Destination values occur most often?",
+  "task": "groupby_topk_values",
+  "input_sha256": "295071ce5ed72df2cada7398910d163f76e0e144599eef1fe35c4bab0c844423",
+  "sample_revision": "sample_contract_v2",
+  "metric_type": "unordered_list_str_match"
+}

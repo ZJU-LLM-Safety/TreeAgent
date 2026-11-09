@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+only the value
+
+Data
+What is the departure country of flight leg 2118?
+
+Question
+What is the departure country of flight leg 2118?

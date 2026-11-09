@@ -1,0 +1,183 @@
+{
+  "formal_model_tokenizer": false,
+  "mode": "deterministic_character_tokenizer_check",
+  "sections": [
+    {
+      "ancestor_paths": [
+        "/",
+        "/main[1]",
+        "/main[1]/section[1]"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "/main[1]/section[1]/h2[1]",
+        "/main[1]/section[1]/h2[1]/text[1]",
+        "/main[1]/section[1]",
+        "/main[1]/section[1]/p[1]",
+        "/main[1]/section[1]/p[1]/text[1]"
+      ],
+      "content_byte_end": 50,
+      "content_byte_start": 18,
+      "content_text": "<h2>Alpha</h2><p>price: 1111</p>",
+      "content_tokens": 32,
+      "context_format": "html",
+      "count_match_delta": 2,
+      "count_match_exact": false,
+      "covered_paths": [
+        "/main[1]/section[1]/h2[1]",
+        "/main[1]/section[1]/p[1]"
+      ],
+      "document_order_index": 0,
+      "method": "treeagent",
+      "parent_path": "/main[1]/section[1]",
+      "path": "/main[1]/section[1]::children[0,1]",
+      "path_parts": [
+        "main[1]",
+        "section[1]"
+      ],
+      "path_text": "<path>\n/main[1]/section[1]::children[0,1]\n</path>",
+      "path_tokens": 49,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": "<main>\n  <section><h2>Alpha</h2><p>price: 1111</p></section>",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [],
+      "scope_parent_paths": {
+        "/": null,
+        "/main[1]": "/",
+        "/main[1]/section[1]": "/main[1]",
+        "/main[1]/section[1]/h2[1]": "/main[1]/section[1]",
+        "/main[1]/section[1]/h2[1]/text[1]": "/main[1]/section[1]/h2[1]",
+        "/main[1]/section[1]/p[1]": "/main[1]/section[1]",
+        "/main[1]/section[1]/p[1]/text[1]": "/main[1]/section[1]/p[1]"
+      },
+      "section_type": "siblings",
+      "selected_tree_budget": 32,
+      "sibling_range": [
+        0,
+        1
+      ],
+      "source_byte_end": 60,
+      "source_byte_start": 0,
+      "step_id": 1,
+      "target_flat_sections": 4,
+      "text": "<main>\n  <section><h2>Alpha</h2><p>price: 1111</p></section>",
+      "total_tokens": 109,
+      "traversal_order_index": 0,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "/main[1]/section[1]::children[0,1]",
+      "wrapper_prefix": "<main>\n  <section>",
+      "wrapper_suffix": "</section>",
+      "wrapper_tokens": 28
+    },
+    {
+      "ancestor_paths": [
+        "/",
+        "/main[1]",
+        "/main[1]/section[2]"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "/main[1]",
+        "/",
+        "/main[1]/section[2]/h2[1]",
+        "/main[1]/section[2]/h2[1]/text[1]",
+        "/main[1]/section[2]",
+        "/main[1]/section[2]/p[1]",
+        "/main[1]/section[2]/p[1]/text[1]"
+      ],
+      "content_byte_end": 104,
+      "content_byte_start": 72,
+      "content_text": "<h2>Bravo</h2><p>price: 2222</p>",
+      "content_tokens": 32,
+      "context_format": "html",
+      "count_match_delta": 2,
+      "count_match_exact": false,
+      "covered_paths": [
+        "/main[1]/section[2]/h2[1]",
+        "/main[1]/section[2]/p[1]"
+      ],
+      "document_order_index": 1,
+      "method": "treeagent",
+      "parent_path": "/main[1]/section[2]",
+      "path": "/main[1]/section[2]::children[0,1]",
+      "path_parts": [
+        "main[1]",
+        "section[2]"
+      ],
+      "path_text": "<path>\n/main[1]/section[2]::children[0,1]\n</path>",
+      "path_tokens": 49,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": "\n  <section><h2>Bravo</h2><p>price: 2222</p></section>\n</main>\n",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [
+        1
+      ],
+      "scope_parent_paths": {
+        "/": null,
+        "/main[1]": "/",
+        "/main[1]/section[2]": "/main[1]",
+        "/main[1]/section[2]/h2[1]": "/main[1]/section[2]",
+        "/main[1]/section[2]/h2[1]/text[1]": "/main[1]/section[2]/h2[1]",
+        "/main[1]/section[2]/p[1]": "/main[1]/section[2]",
+        "/main[1]/section[2]/p[1]/text[1]": "/main[1]/section[2]/p[1]"
+      },
+      "section_type": "siblings",
+      "selected_tree_budget": 32,
+      "sibling_range": [
+        0,
+        1
+      ],
+      "source_byte_end": 123,
+      "source_byte_start": 60,
+      "step_id": 2,
+      "target_flat_sections": 4,
+      "text": "\n  <section><h2>Bravo</h2><p>price: 2222</p></section>\n</main>\n",
+      "total_tokens": 112,
+      "traversal_order_index": 1,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "/main[1]/section[2]::children[0,1]",
+      "wrapper_prefix": "\n  <section>",
+      "wrapper_suffix": "</section>\n</main>\n",
+      "wrapper_tokens": 31
+    }
+  ],
+  "stats": {
+    "actual_tree_sections": 2,
+    "base_section_size": 32,
+    "closing_scope_events": 12,
+    "content_tokens": 64,
+    "count_match_delta": 2,
+    "count_match_exact": false,
+    "num_sections": 2,
+    "path_token_overhead": 98,
+    "selected_tree_budget": 32,
+    "target_flat_sections": 4,
+    "total_tokens": 221,
+    "tree_budget_max": 63,
+    "wrapper_token_overhead": 59
+  }
+}

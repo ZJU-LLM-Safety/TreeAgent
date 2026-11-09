@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_dev_32k_groupby_topk_values_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line",
+  "question": "What are the 3 most common departure country values among all flight legs?",
+  "input": "What are the 3 most common departure country values among all flight legs?",
+  "task": "groupby_topk_values",
+  "input_sha256": "5c1e6b0362b657781f59ab19acb8693cbba4719d96d96f62b12c8bc8c15c2c0a",
+  "sample_revision": "source_preserved",
+  "metric_type": "unordered_list_str_match"
+}

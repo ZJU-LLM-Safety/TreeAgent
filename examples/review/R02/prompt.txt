@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For flight legs 8801 and 9492, return the departure airport code of each flight leg.
+
+Question
+For flight legs 8801 and 9492, return the departure airport code of each flight leg.

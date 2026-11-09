@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+Return the FTM for these distinct HTML records. Give one value per line in Q1-to-Q2 order, without Q labels or explanations. Q1: the row where Season is CAREER on sports site 16 page 1600063 Q2: the row where Season is 2015-16 on sports site 16 page 1600074
+
+Question
+Return the FTM for these distinct HTML records. Give one value per line in Q1-to-Q2 order, without Q labels or explanations. Q1: the row where Season is CAREER on sports site 16 page 1600063 Q2: the row where Season is 2015-16 on sports site 16 page 1600074

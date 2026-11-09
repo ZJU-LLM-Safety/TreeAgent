@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_test_8k_groupby_topk_values_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line",
+  "question": "What are the 3 most common marketing carrier values among all flight legs?",
+  "input": "What are the 3 most common marketing carrier values among all flight legs?",
+  "task": "groupby_topk_values",
+  "input_sha256": "af0a45f24f085956a13d1398ecfb105cc6b90a2e1031b145910d7cf7a97fd391",
+  "sample_revision": "source_preserved",
+  "metric_type": "unordered_list_str_match"
+}

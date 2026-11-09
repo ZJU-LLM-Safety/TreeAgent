@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_test_8k_record_field_lookup_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the value",
+  "question": "What is the free cancellation policy of product PRv2A2z8xpqy?",
+  "input": "What is the free cancellation policy of product PRv2A2z8xpqy?",
+  "task": "record_field_lookup",
+  "input_sha256": "3dd80c5f67c0190832b8dfa68b94183e258762b3e010e58b6cbfbdc68a5e9bca",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

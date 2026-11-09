@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For taxi options 26898 and 19309, return the vehicle type of each taxi option.
+
+Question
+For taxi options 26898 and 19309, return the vehicle type of each taxi option.

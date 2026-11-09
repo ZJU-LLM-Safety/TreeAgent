@@ -1,0 +1,330 @@
+{
+  "revision": "sample_contract_v2",
+  "scope": "Sample wording, output instructions and scoring revisions. UIDs identify source examples; line hashes and sample_revision identify each packaged version.",
+  "records": [
+    {
+      "uid": "html_websrc_v4_test_8k_conditional_count_00002",
+      "package_path": "data/html/representative.jsonl",
+      "package_line": 6,
+      "changes": {
+        "question": {
+          "before": "Across all semantic HTML records in the corpus, how many records have Release year equal to (2019)?",
+          "after": "Across the movie records in the supplied HTML documents, how many have a displayed Release year equal to \"(2019)\"? Count each movie record separately."
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "8015edf11e1d6c7c11a85bd9bb07c972952bc03e70c0be314246ef92d1d9fa00",
+      "revised_line_sha256": "e72033b0dbfffd53bda634fe6afdc23f70d9acbafc145338fe6efe0ef48641a3"
+    },
+    {
+      "uid": "html_websrc_v4_test_8k_groupby_topk_values_00000",
+      "package_path": "data/html/representative.jsonl",
+      "package_line": 7,
+      "changes": {
+        "question": {
+          "before": "Across all semantic HTML records in the corpus, which three Destination values occur most often?",
+          "after": "Across the vehicle columns in the supplied HTML comparison tables, which three distinct Destination values occur most frequently? Count each vehicle column separately."
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "be922f097db79e4ec0ee66a3ef6c8be6cbbd2afade755d6b8f8c8da16bbaaea8",
+      "revised_line_sha256": "dfbea9cb19f147aa427d79395ea0aeefb774158e6dd57681fe26ec0821f74a92"
+    },
+    {
+      "uid": "html_websrc_v4_test_8k_numeric_extreme_00000",
+      "package_path": "data/html/representative.jsonl",
+      "package_line": 8,
+      "changes": {
+        "question": {
+          "before": "Across all semantic HTML records in the corpus, what is the min Destination value?",
+          "after": "Across the vehicle columns in the supplied HTML comparison tables, what is the smallest numeric amount shown in the Destination field?"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "87f99e111a136bf1d0f9d619304851b4f78aa49fd6b24325fb39b7d4efac2e52",
+      "revised_line_sha256": "e2918d20c303c5d8cd6d12a2fffc0b075a9bd3aab63a6eb315097bf05103eec4"
+    },
+    {
+      "uid": "jss_2aac94a0d72f00388c30",
+      "package_path": "data/javascript/representative.jsonl",
+      "package_line": 8,
+      "changes": {
+        "metric_type": {
+          "before": "accuracy_string",
+          "after": "exact_number_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "78897a6ff47788b982bddbe0d5903736d3892617a2371ff429fe9836d34d08cf",
+      "revised_line_sha256": "7244ce333f2c8dac7c953c14ecfdf028d3562532dfb7217587002ef2cff7d007"
+    },
+    {
+      "uid": "json_subset_train_32k_numeric_extreme_000000",
+      "package_path": "data/json/regression_fixtures.jsonl",
+      "package_line": 17,
+      "changes": {
+        "question": {
+          "before": "What is the cheapest base price available?",
+          "after": "Across all supplied car-rental records, what is the lowest listed rental price in USD? Return only the numerical value; do not convert currencies."
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "6c1e07cd4eef31fcae2b52d41c73cb8c1d6bbd04e2a0e3d06005c5a5b7c89de4",
+      "revised_line_sha256": "fadfbb8508a5ff78541a49ad5817570e926245a4baea79f8cbb9e6a4efbedbc8"
+    },
+    {
+      "uid": "json_subset_dev_32k_record_multi_field_4_000000",
+      "package_path": "data/json/regression_fixtures.jsonl",
+      "package_line": 22,
+      "changes": {
+        "question": {
+          "before": "For car 372903916, return the drive-away price, cleanliness rating, base price, deposit.",
+          "after": "For car 372903916, return its drive-away price in USD, cleanliness rating, listed rental price in USD, and base-currency deposit in INR, in that order. Give one value per line without labels or explanations; do not convert currencies."
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "ef1628ba18538d204585d4d3177f15894cbfbb07eac412602696b2bee2776e3c",
+      "revised_line_sha256": "fd3fb357e5c66e2c93b41874f2e3aeb9eccd0dd039197ce58b48e0375ef987a4"
+    },
+    {
+      "uid": "json_subset_dev_32k_numeric_extreme_000000",
+      "package_path": "data/json/regression_fixtures.jsonl",
+      "package_line": 25,
+      "changes": {
+        "question": {
+          "before": "What is the cheapest base price available?",
+          "after": "Across all supplied car-rental records, what is the lowest listed rental price in USD? Return only the numerical value; do not convert currencies."
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "6c63f27f57f5a4e495b9f86b27b897a4531214293fed51bf79fbc3e000d8291c",
+      "revised_line_sha256": "5b09c59543295f0ff20093a1712539c503c2a6aceef245d134d233559ce081ee"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_00_record_field_lookup",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 1,
+      "changes": {
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Return only the value."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "accuracy_string"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "45f0037b88d21191e41f1b7017cc723473f16a763896197ec9a1b55b2d5c4226",
+      "revised_line_sha256": "03c7b3befb18230b9f3fd6f9f7e236fcfab69d7a9961af8294812c1841bbc86a"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_01_multi_record_field_2",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 2,
+      "changes": {
+        "answer_format": {
+          "before": "value_only",
+          "after": "ordered_newline_values"
+        },
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Give one value per line, in the order requested, without labels or explanations."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "ordered_list_str_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "f5e0b6c970faae41b56c6a242be2af5e82e40a69b909acf1f62848647d1a1d5b",
+      "revised_line_sha256": "cbe9dfa64fbcab9c8b860c181d73080dbae65e2cbc6d06e2d57d672b67f3a949"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_02_multi_record_field_4",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 3,
+      "changes": {
+        "answer_format": {
+          "before": "value_only",
+          "after": "ordered_newline_values"
+        },
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Give one value per line, in the order requested, without labels or explanations."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "ordered_list_str_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "4faed148fcda8770d184299fcb8f729843139e7dfc9448caa4babe9126ac0849",
+      "revised_line_sha256": "0a6fcacae2cea3434e7555ae976952bd71ba7becdedffa36684ece4310f2e58e"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_03_record_multi_field_2",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 4,
+      "changes": {
+        "answer_format": {
+          "before": "value_only",
+          "after": "ordered_newline_values"
+        },
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Give one value per line, in the order requested, without labels or explanations."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "ordered_list_str_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "6bda4aa87d9844ffae8211806cf8535d02a61f17882a7311b0a8915b9017e448",
+      "revised_line_sha256": "bc600ee94cda10f5ffc93d319460eeeaf73242ce51321262d18f8679170da43c"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_04_record_multi_field_4",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 5,
+      "changes": {
+        "answer_format": {
+          "before": "value_only",
+          "after": "ordered_newline_values"
+        },
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Give one value per line, in the order requested, without labels or explanations."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "ordered_list_str_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "1fe9c7d9e85c9e014f1a6e8364419810f0d8fa4ae8a896ba2558bd9ac064b96f",
+      "revised_line_sha256": "4a41268819343de59414544ed3afd8c1e7c3c1bbe477b32e9b9dbba137d5f90c"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_05_conditional_count",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 6,
+      "changes": {
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Return only the numerical value."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "approx_number_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "e244d12c401bf25c14060ae3d5bc6835132cc03646d481eb8af732a77e1926c1",
+      "revised_line_sha256": "3ee701004b26c94fe43d87c2e4d36039360b037710ed73975b76b4195b0eb135"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_06_groupby_topk_values",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 7,
+      "changes": {
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Return one value per line without counts or explanations."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "unordered_list_str_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "35f462273957c94a60803b5558e1596cc75e9f4f5f39e667937334f83e04adcc",
+      "revised_line_sha256": "8643da2593f5084457725cd8d86a85835621b78bfee7173938cdb6f591aae75b"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_07_numeric_extreme",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 8,
+      "changes": {
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Return only the numerical value."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "approx_number_match"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "9855877fa2ec2ae3d1ffa1ceba5dae5d7e7af3e8bf6f33f0fda3340731e478fe",
+      "revised_line_sha256": "6fe9a3f1fca3e4476fe69020b1dcdd35366174ab441ae68e1a42afbda5546c49"
+    },
+    {
+      "uid": "yaml_synthetic_fixture_08_structure",
+      "package_path": "data/yaml/synthetic_fixtures.jsonl",
+      "package_line": 9,
+      "changes": {
+        "answer_format_instruction": {
+          "before": null,
+          "after": "Return only the value."
+        },
+        "metric_type": {
+          "before": null,
+          "after": "accuracy_string"
+        },
+        "sample_revision": {
+          "before": null,
+          "after": "sample_contract_v2"
+        }
+      },
+      "previous_line_sha256": "9c594253d27bc7aa79f4914d2ff8f140659adc6f55c8108cc8eb334e30848436",
+      "revised_line_sha256": "3c9538bf91a7f99ed14bf8229d81ba70fb547c0588d2c87da4acc621df81085e"
+    }
+  ]
+}

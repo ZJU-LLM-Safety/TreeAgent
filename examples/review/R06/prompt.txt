@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+only the integer count
+
+Data
+How many flight legs have arrival country code CA?
+
+Question
+How many flight legs have arrival country code CA?

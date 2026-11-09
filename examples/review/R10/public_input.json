@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_train_32k_record_field_lookup_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the value",
+  "question": "What is the category of product PRn1YKbvZmdu?",
+  "input": "What is the category of product PRn1YKbvZmdu?",
+  "task": "record_field_lookup",
+  "input_sha256": "53ec2d3aec0164022856f29b77894756d82dfed50d9c25f3f3aa0fc4e2a1da8f",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

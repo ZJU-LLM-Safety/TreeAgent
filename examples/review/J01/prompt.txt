@@ -1,0 +1,199 @@
+Instructions
+Answer using only the supplied data.
+
+only the value
+
+Data
+// @structured-javascript-source {"binding":"mx_hash_int_1","code_sha256":"52ccdccec20f3849b388f9f0fa080ac32e8c8704c3f861d21be67ed10fa45137","commit":"27e70ddf91e95c40d03bca7b2bac5a212e4c4151","id":"jssstate_ee0b8c64c6e9308329c3","initializer_sha256":"fa5e2e6d0dd530914667296e167641bc8560586f7b469c17bd72ef755110a5a0","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"src/nodes/materialx/MaterialXNoise.js","repository":"mrdoob/three.js","repository_url":"https://github.com/mrdoob/three.js","source_end_byte":14201,"source_start_byte":14086}
+const __structured_javascript_state_ee0b8c64c6e9308329c3 = {
+	name: 'mx_hash_int_1',
+	type: 'uint',
+	inputs: [
+		{ name: 'x', type: 'int' },
+		{ name: 'y', type: 'int' }
+	]
+};
+
+// @structured-javascript-source {"binding":"exports.lineLayers","code_sha256":"5ea6b665dc9e93d92e62dbfd6d6006f054feada92270353a0c0e2f00c97fc842","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_f1e4cdf881d0f44dbc59","initializer_sha256":"e643849c8e037c94c808846845ee3f6dc8e797d19c8abf82c296ddc33d8bdcd2","license":"MIT","native_features":["unquoted_property_key"],"path":"src/plots/geo/constants.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":7124,"source_start_byte":7039}
+const __structured_javascript_state_f1e4cdf881d0f44dbc59 = {
+    subunits: 1,
+    countries: 1,
+    coastlines: 1,
+    rivers: 1,
+    frame: 1
+};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"acba9cfb0a1abf12f5cd0e3bb8379314e2012042259bea2323a6d05a384ed570","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_34196fd330d4cfb60119","initializer_sha256":"90261d6dee4815286d3b7fe1d8e582620615acb13d2e417b3638f877aac78f39","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-callback-return.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":15370,"source_start_byte":15153}
+const __structured_javascript_state_34196fd330d4cfb60119 = {
+			code: "foo.toSorted(function foo() {})",
+			errors: [
+				{
+					messageId: "expectedInside",
+					data: {
+						name: "function 'foo'",
+						arrayMethodName: "Array.prototype.toSorted",
+					},
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"7149b802d241117a1d4dfd9b38c607385564e01941a1eb8fd80733297039a8a7","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_522ad3159441909ae665","initializer_sha256":"9023670cc16f6a59efe772beaaf0467ab20302ead74229e798837cfaa2695f48","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-bracket-newline.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":32533,"source_start_byte":32226}
+const __structured_javascript_state_522ad3159441909ae665 = {
+			code: "var foo = [\n1,\n2\n];",
+			output: "var foo = [1,\n2];",
+			options: [{ multiline: false }],
+			errors: [
+				{
+					messageId: "unexpectedOpeningLinebreak",
+					line: 1,
+					column: 11,
+				},
+				{
+					messageId: "unexpectedClosingLinebreak",
+					line: 4,
+					column: 1,
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"d63b478990882714b7715e228c1c0714fea4e68b0e1f517f4c26a51c99d43199","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_f946a0151bfcc0dd844a","initializer_sha256":"dc35ebcd5ec658c84ed377c6ac434977224310adca9bee4c9e6a635388b60cea","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/camelcase.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":11549,"source_start_byte":11433}
+const __structured_javascript_state_f946a0151bfcc0dd844a = {
+			code: "({ a: obj.foo } = bar);",
+			options: [{ allow: ["fo_o"] }],
+			languageOptions: { ecmaVersion: 6 },
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"a428e172f974c1935c444a9215c6a230bec347c5b707fdad24aef4d86d27b4f4","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_fdcf55ad7f1084f38a33","initializer_sha256":"2c05d63b739941822cea9250d43e441fee4886754fb624f55e0d9df32c7e24c2","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-bracket-newline.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":15513,"source_start_byte":15189}
+const __structured_javascript_state_fdcf55ad7f1084f38a33 = {
+			code: "var foo = [1, 2 /* any comment */];",
+			output: "var foo = [\n1, 2 /* any comment */\n];",
+			options: ["always"],
+			errors: [
+				{
+					messageId: "missingOpeningLinebreak",
+					line: 1,
+					column: 11,
+				},
+				{
+					messageId: "missingClosingLinebreak",
+					line: 1,
+					column: 34,
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"module.exports.plugins","code_sha256":"99595a2abc1362bad0b3e09a480209d6aabe8c2e2956cdffa5d9437750bff57b","commit":"2043f6e66e87a10e774ca200a5d0636a0a3f9aa3","id":"jssstate_580d8767eb27801b39e5","initializer_sha256":"aaf2b243bb9ba10706878fbdf0f6670a7bb2cd6a03fbe6780a7b28859e764323","license":"MIT","native_features":["unquoted_property_key"],"path":"test/configCases/sharing/output-esm-library/webpack.config.js","repository":"webpack/webpack","repository_url":"https://github.com/webpack/webpack","source_end_byte":470,"source_start_byte":366}
+const __structured_javascript_state_580d8767eb27801b39e5 = {
+			shared: {
+				lib: { requiredVersion: "auto" },
+				"lib/esm": { requiredVersion: "auto" }
+			}
+		};
+
+// @structured-javascript-source {"binding":"extendFlat.description","code_sha256":"f913ed0e567e02a07eb5d3924a42ea89f714ad7e245aa198fe11287216a82da6","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_623a81e3098a0daae972","initializer_sha256":"fbc6d427610c0ac2410b1958e5746c24c170a6c725302deef4588387c6ee8fcd","license":"MIT","native_features":["single_quoted_string"],"path":"src/traces/sunburst/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":6280,"source_start_byte":5915}
+const __structured_javascript_state_623a81e3098a0daae972 = [
+            'Sets the font used for `textinfo` lying outside the sector.',
+            'This option refers to the root of the hierarchy',
+            'presented at the center of a sunburst graph.',
+            'Please note that if a hierarchy has multiple root nodes,',
+            "this option won't have any effect and `insidetextfont` would be used."
+        ];
+
+// @structured-javascript-source {"binding":"module.exports.dimensions.values.description","code_sha256":"4dce4ffdc335a706c9c808fb538a2598f3fdfb939187835459cdd63403d9a02e","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_c4babc61a41a5d22e52e","initializer_sha256":"6de48bc1fa33375ae87730f7f1db0ca196d0f89f99561a7371ac2a9674344213","license":"MIT","native_features":["single_quoted_string"],"path":"src/traces/parcats/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":6447,"source_start_byte":6179}
+const __structured_javascript_state_c4babc61a41a5d22e52e = [
+                'Dimension values. `values[n]` represents the category value of the `n`th point in the dataset,',
+                'therefore the `values` vector for all dimensions must be the same (longer vectors',
+                'will be truncated).'
+            ];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid.errors","code_sha256":"cce607bc1fd77ec8c1f323385f38d8832a68a8ecd926f4ae5a92bb1aa66ee3d8","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_2b3f8b4c251b18279d56","initializer_sha256":"d28d1e8263aed6d35fd525f6dda6155a81f6b0334dc0b27574ed7a532f3cf079","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-tabs.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":1636,"source_start_byte":1517}
+const __structured_javascript_state_2b3f8b4c251b18279d56 = [
+				{
+					messageId: "unexpectedTab",
+					line: 1,
+					column: 9,
+					endLine: 1,
+					endColumn: 10,
+				},
+			];
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"e1954dc62d6faf847b08b5156dedfc4156de08ee629537b4e41b6d1f1cf79e3c","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_0aef1ee956a147311e8f","initializer_sha256":"2c6ca854937ffb86802241f33094acde1e9ba9dee496e41a1f79486f6c678d67","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/lines-around-comment.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":12565,"source_start_byte":12364}
+const __structured_javascript_state_0aef1ee956a147311e8f = {
+			code: "switch ('foo'){\ncase 'foo':\nbreak;\n\ndefault:\nvar g = 1;\n\n// line at switch case end\n\n}",
+			options: [
+				{
+					afterLineComment: true,
+					allowBlockEnd: true,
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"9b5b21481d379f2f41d04ef0201ea6e1b3008e925bfd01daa54399961ac33ea1","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_a05e6a305ab53648544b","initializer_sha256":"addf9ade7d02fd8c8248ed32c0cfafc9bb5bfe0172059ca4aa64b43709ff2ffd","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/function-paren-newline.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":2319,"source_start_byte":2235}
+const __structured_javascript_state_a05e6a305ab53648544b = {
+			code: "async (foo, bar) => {};",
+			languageOptions: { ecmaVersion: 2017 },
+		};
+
+// @structured-javascript-source {"binding":"module.exports.x0.description","code_sha256":"4690af0b7704ba4983aac7baa8fca31ba9f5fbc666ffa3387fe1e92dc1911e3f","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_259955bc75f4c37ad402","initializer_sha256":"fee21337887de57befbbcbf098f8d759c05cb5c09f419eb9ad220738f6791c20","license":"MIT","native_features":["single_quoted_string"],"path":"src/traces/box/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":1280,"source_start_byte":1066}
+const __structured_javascript_state_259955bc75f4c37ad402 = [
+            'Sets the x coordinate for single-box traces',
+            'or the starting coordinate for multi-box traces',
+            'set using q1/median/q3.',
+            'See overview for more info.'
+        ];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid.errors","code_sha256":"7e05b3fd4e815bd53cf338c478db1d3462eb025ec1a3900b9db89f96472b60d5","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_5e177a37821b6c4f2c7a","initializer_sha256":"72f54de08b9e6a2e7d5f9f2f9436e53502057b39e1aa8ab312126f76553d1fc8","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/max-len.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":20755,"source_start_byte":20451}
+const __structured_javascript_state_5e177a37821b6c4f2c7a = [
+				{
+					messageId: "max",
+					data: { lineLength: 37, maxLength: 29 },
+					line: 2,
+					column: 1,
+					endLine: 2,
+					endColumn: 38,
+				},
+				{
+					messageId: "max",
+					data: { lineLength: 44, maxLength: 29 },
+					line: 3,
+					column: 1,
+					endLine: 3,
+					endColumn: 45,
+				},
+			];
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"fda99078d229f4a509dbd41883be6600f7afe5b8b93daffeaefc931d3aa5c10e","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_9fc9ba24a6ca07f45d4e","initializer_sha256":"66e5f6fe1665d75d272deb55cba16a2e55e90cf40e715ea183590f1d17665b7c","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-fallthrough.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":5082,"source_start_byte":4980}
+const __structured_javascript_state_9fc9ba24a6ca07f45d4e = {
+			code: "switch (a) {\n case 1: ; break; \n case 3: }",
+			options: [{ allowEmptyCase: true }],
+		};
+
+// @structured-javascript-source {"binding":"module.exports","code_sha256":"d5a63abcddee48405674c23b53ec1575e86ffbb67feadb482570182ceb39f595","commit":"2043f6e66e87a10e774ca200a5d0636a0a3f9aa3","id":"jssstate_fceac0183fbbb6d4aeaa","initializer_sha256":"9bbe26bbb3d9a2a06de86ba7b6e660a8ef444b8362008a4029eea2dca0658fa7","license":"MIT","native_features":["comment","unquoted_property_key"],"path":"test/configCases/deno/protocol-externals/webpack.config.js","repository":"webpack/webpack","repository_url":"https://github.com/webpack/webpack","source_end_byte":326,"source_start_byte":84}
+const __structured_javascript_state_fceac0183fbbb6d4aeaa = {
+	target: "deno",
+	// `target: "deno"` defaults to ESM, but the test harness decides the bundle
+	// extension from the raw config (before defaults), so make it explicit.
+	experiments: {
+		outputModule: true
+	},
+	output: {
+		module: true
+	}
+};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid.errors","code_sha256":"fc9fb6173a574ce4a671ab6cac66bfa1d36609cd14814789e8f4d701df12da1c","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_dece0a494cc7ab733ac1","initializer_sha256":"dd72d2f169ab32b658c780346293a3268c32e3548d0ce5ce04b4e87e3ae9a8c4","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/object-curly-newline.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":28504,"source_start_byte":28303}
+const __structured_javascript_state_dece0a494cc7ab733ac1 = [
+				{
+					line: 1,
+					column: 9,
+					messageId: "expectedLinebreakAfterOpeningBrace",
+				},
+				{
+					line: 2,
+					column: 5,
+					messageId: "expectedLinebreakBeforeClosingBrace",
+				},
+			];
+
+Question
+In state jssstate_ee0b8c64c6e9308329c3 (source state label "mx_hash_int_1"), record whose name is "mx_hash_int_1", return its type property value. Answer with only the value.

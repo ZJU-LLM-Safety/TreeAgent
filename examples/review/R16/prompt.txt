@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line
+
+Data
+What are the 3 most common vehicle type values among all taxi options?
+
+Question
+What are the 3 most common vehicle type values among all taxi options?

@@ -1,0 +1,11 @@
+{
+  "uid": "html_websrc_v4_test_8k_multi_record_field_4_00000",
+  "context_format": "html",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "Return the Runtime for these distinct HTML records. Give one value per line in Q1-to-Q4 order, without Q labels or explanations. Q1: the movie where Title is Won't You Be My Neighbor? on movie site 08 page 0800015 Q2: the movie where Title is Avengers: Infinity War on movie site 08 page 0800042 Q3: the movie where Title is Tokyo Story on movie site 08 page 0800045 Q4: the movie where Title is Love, Simon on movie site 08 page 0800068",
+  "input": "Return the Runtime for these distinct HTML records. Give one value per line in Q1-to-Q4 order, without Q labels or explanations. Q1: the movie where Title is Won't You Be My Neighbor? on movie site 08 page 0800015 Q2: the movie where Title is Avengers: Infinity War on movie site 08 page 0800042 Q3: the movie where Title is Tokyo Story on movie site 08 page 0800045 Q4: the movie where Title is Love, Simon on movie site 08 page 0800068",
+  "task": "multi_record_field_4",
+  "input_sha256": "b4ee27c9d3aa03cacaa4e0c9f228154a72ff25d0ebd9dd316d0771511e62a10e",
+  "sample_revision": "source_preserved",
+  "metric_type": "ordered_list_str_match"
+}

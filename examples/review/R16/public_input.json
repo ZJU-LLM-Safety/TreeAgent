@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_train_32k_groupby_topk_values_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line",
+  "question": "What are the 3 most common vehicle type values among all taxi options?",
+  "input": "What are the 3 most common vehicle type values among all taxi options?",
+  "task": "groupby_topk_values",
+  "input_sha256": "4f99d50bad864497ce4ab9cceecf4705da207eef7d6f917cf822d9439296867e",
+  "sample_revision": "source_preserved",
+  "metric_type": "unordered_list_str_match"
+}

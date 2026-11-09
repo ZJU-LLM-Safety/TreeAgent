@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_dev_32k_multi_record_field_2_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "For taxi options 26898 and 19309, return the vehicle type of each taxi option.",
+  "input": "For taxi options 26898 and 19309, return the vehicle type of each taxi option.",
+  "task": "multi_record_field_2",
+  "input_sha256": "fbc4de913949243a179584b4f47474b07a69456d2d890971ef57a1913ddbe06c",
+  "sample_revision": "source_preserved",
+  "metric_type": "ordered_list_str_match"
+}

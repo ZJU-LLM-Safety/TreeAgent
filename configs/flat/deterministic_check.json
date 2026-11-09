@@ -1,0 +1,6 @@
+{
+  "description": "Deterministic Flat check with a character tokenizer.",
+  "method": "flat",
+  "tokenizer": "character_fixture_only",
+  "section_size": 72
+}

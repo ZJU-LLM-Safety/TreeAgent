@@ -1,0 +1,11 @@
+{
+  "uid": "html_websrc_v4_test_8k_conditional_count_00002",
+  "context_format": "html",
+  "instructions": "Answer using only the supplied data.\n\nonly the integer count",
+  "question": "Across the movie records in the supplied HTML documents, how many have a displayed Release year equal to \"(2019)\"? Count each movie record separately.",
+  "input": "Across all semantic HTML records in the corpus, how many records have Release year equal to (2019)?",
+  "task": "conditional_count",
+  "input_sha256": "f5348f687b53b49d158a3797912043b6775d8f7844b64b3a6091a7c004cbc2c5",
+  "sample_revision": "sample_contract_v2",
+  "metric_type": "accuracy_string"
+}

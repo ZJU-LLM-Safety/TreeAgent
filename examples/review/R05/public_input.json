@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_test_8k_record_multi_field_4_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "For room 59354301_371922173_3_2_0, return the child capacity, adult capacity, all-inclusive room price, gross room price.",
+  "input": "For room 59354301_371922173_3_2_0, return the child capacity, adult capacity, all-inclusive room price, gross room price.",
+  "task": "record_multi_field_4",
+  "input_sha256": "9a3bb61a3dfb50e6e478cf6108162b14e2de47eea6670299dd18b461a3aab155",
+  "sample_revision": "source_preserved",
+  "metric_type": "ordered_list_str_match"
+}

@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_test_128k_record_field_lookup_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the value",
+  "question": "What is the search result position of hotel 10975?",
+  "input": "What is the search result position of hotel 10975?",
+  "task": "record_field_lookup",
+  "input_sha256": "0e7043c499dea6793d7a10714160b1f1f252a470947ee2447960db9039c8a0e2",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

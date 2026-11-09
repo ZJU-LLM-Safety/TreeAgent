@@ -1,0 +1,232 @@
+{
+  "formal_model_tokenizer": false,
+  "mode": "deterministic_character_tokenizer_check",
+  "sections": [
+    {
+      "ancestor_paths": [
+        "$",
+        "$[\"records\"]"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "$[\"records\"][0]",
+        "$[\"records\"][0][\"name\"]",
+        "$[\"records\"][0][\"price\"]"
+      ],
+      "content_byte_end": 40,
+      "content_byte_start": 11,
+      "content_text": "- name: Alpha\n    price: 1111",
+      "content_tokens": 29,
+      "context_format": "yaml",
+      "count_match_delta": 1,
+      "count_match_exact": false,
+      "covered_paths": [
+        "$[\"records\"][0]"
+      ],
+      "document_order_index": 0,
+      "method": "treeagent",
+      "parent_path": "$[\"records\"]",
+      "path": "$[\"records\"][0]",
+      "path_parts": [
+        "[\"records\"]",
+        "[0]"
+      ],
+      "path_text": "<path>\n$[\"records\"][0]\n</path>",
+      "path_tokens": 30,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": "records:\n  - name: Alpha\n    price: 1111",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [],
+      "scope_parent_paths": {
+        "$": null,
+        "$[\"records\"]": "$",
+        "$[\"records\"][0]": "$[\"records\"]",
+        "$[\"records\"][0][\"name\"]": "$[\"records\"][0]",
+        "$[\"records\"][0][\"price\"]": "$[\"records\"][0]"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 32,
+      "sibling_range": null,
+      "source_byte_end": 40,
+      "source_byte_start": 0,
+      "step_id": 1,
+      "target_flat_sections": 4,
+      "text": "records:\n  - name: Alpha\n    price: 1111",
+      "total_tokens": 70,
+      "traversal_order_index": 0,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "$[\"records\"][0]",
+      "wrapper_prefix": "records:\n  ",
+      "wrapper_suffix": "",
+      "wrapper_tokens": 11
+    },
+    {
+      "ancestor_paths": [
+        "$",
+        "$[\"records\"]"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "$[\"records\"]",
+        "$[\"records\"][1]",
+        "$[\"records\"][1][\"name\"]",
+        "$[\"records\"][1][\"price\"]"
+      ],
+      "content_byte_end": 72,
+      "content_byte_start": 43,
+      "content_text": "- name: Bravo\n    price: 2222",
+      "content_tokens": 29,
+      "context_format": "yaml",
+      "count_match_delta": 1,
+      "count_match_exact": false,
+      "covered_paths": [
+        "$[\"records\"][1]"
+      ],
+      "document_order_index": 1,
+      "method": "treeagent",
+      "parent_path": "$[\"records\"]",
+      "path": "$[\"records\"][1]",
+      "path_parts": [
+        "[\"records\"]",
+        "[1]"
+      ],
+      "path_text": "<path>\n$[\"records\"][1]\n</path>",
+      "path_tokens": 30,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": "\n  - name: Bravo\n    price: 2222",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [
+        1
+      ],
+      "scope_parent_paths": {
+        "$": null,
+        "$[\"records\"]": "$",
+        "$[\"records\"][1]": "$[\"records\"]",
+        "$[\"records\"][1][\"name\"]": "$[\"records\"][1]",
+        "$[\"records\"][1][\"price\"]": "$[\"records\"][1]"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 32,
+      "sibling_range": null,
+      "source_byte_end": 72,
+      "source_byte_start": 40,
+      "step_id": 2,
+      "target_flat_sections": 4,
+      "text": "\n  - name: Bravo\n    price: 2222",
+      "total_tokens": 62,
+      "traversal_order_index": 1,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "$[\"records\"][1]",
+      "wrapper_prefix": "\n  ",
+      "wrapper_suffix": "",
+      "wrapper_tokens": 3
+    },
+    {
+      "ancestor_paths": [
+        "$"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "$",
+        "$[\"metadata\"]",
+        "$[\"metadata\"][\"currency\"]"
+      ],
+      "content_byte_end": 99,
+      "content_byte_start": 73,
+      "content_text": "metadata:\n  currency: USD\n",
+      "content_tokens": 26,
+      "context_format": "yaml",
+      "count_match_delta": 1,
+      "count_match_exact": false,
+      "covered_paths": [
+        "$[\"metadata\"]"
+      ],
+      "document_order_index": 2,
+      "method": "treeagent",
+      "parent_path": "$",
+      "path": "$[\"metadata\"]",
+      "path_parts": [
+        "[\"metadata\"]"
+      ],
+      "path_text": "<path>\n$[\"metadata\"]\n</path>",
+      "path_tokens": 28,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": "\nmetadata:\n  currency: USD\n",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [
+        2
+      ],
+      "scope_parent_paths": {
+        "$": null,
+        "$[\"metadata\"]": "$",
+        "$[\"metadata\"][\"currency\"]": "$[\"metadata\"]"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 32,
+      "sibling_range": null,
+      "source_byte_end": 99,
+      "source_byte_start": 72,
+      "step_id": 3,
+      "target_flat_sections": 4,
+      "text": "\nmetadata:\n  currency: USD\n",
+      "total_tokens": 55,
+      "traversal_order_index": 2,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "$[\"metadata\"]",
+      "wrapper_prefix": "\n",
+      "wrapper_suffix": "",
+      "wrapper_tokens": 1
+    }
+  ],
+  "stats": {
+    "actual_tree_sections": 3,
+    "base_section_size": 32,
+    "closing_scope_events": 10,
+    "content_tokens": 84,
+    "count_match_delta": 1,
+    "count_match_exact": false,
+    "num_sections": 3,
+    "path_token_overhead": 88,
+    "selected_tree_budget": 32,
+    "target_flat_sections": 4,
+    "total_tokens": 187,
+    "tree_budget_max": 63,
+    "wrapper_token_overhead": 15
+  }
+}

@@ -1,0 +1,81 @@
+Instructions
+Answer using only the supplied data.
+
+Return one value per line without counts or explanations.
+
+Data
+openapi: 3.0.0
+info:
+  title: Synthetic Alpha Inventory API
+  version: 1.0.0
+x-fixture-id: 6
+paths:
+  /items:
+    get:
+      parameters:
+        - name: limit
+          in: query
+          required: true
+          description: Blue inventory item
+          schema:
+            type: integer
+            format: int32
+            maximum: 10
+---
+openapi: 3.0.0
+info:
+  title: Synthetic Bravo Inventory API
+  version: 1.0.0
+x-fixture-id: 6
+paths:
+  /items:
+    get:
+      parameters:
+        - name: limit
+          in: header
+          required: true
+          description: Green inventory item
+          schema:
+            type: integer
+            format: int32
+            maximum: 20
+---
+openapi: 3.0.0
+info:
+  title: Synthetic Charlie Inventory API
+  version: 1.0.0
+x-fixture-id: 6
+paths:
+  /items:
+    get:
+      parameters:
+        - name: limit
+          in: query
+          required: false
+          description: Red inventory item
+          schema:
+            type: integer
+            format: int64
+            maximum: 30
+---
+openapi: 3.0.0
+info:
+  title: Synthetic Delta Inventory API
+  version: 1.0.0
+x-fixture-id: 6
+paths:
+  /items:
+    get:
+      parameters:
+        - name: limit
+          in: cookie
+          required: true
+          description: Gold inventory item
+          schema:
+            type: integer
+            format: int32
+            maximum: 40
+
+
+Question
+Which three parameter locations occur most often?

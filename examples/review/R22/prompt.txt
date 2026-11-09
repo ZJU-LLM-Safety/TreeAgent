@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For car 372903916, return the drive-away price, cleanliness rating, base price, deposit.
+
+Question
+For car 372903916, return its drive-away price in USD, cleanliness rating, listed rental price in USD, and base-currency deposit in INR, in that order. Give one value per line without labels or explanations; do not convert currencies.

@@ -1,0 +1,11 @@
+{
+  "uid": "yaml_synthetic_fixture_05_conditional_count",
+  "context_format": "yaml",
+  "instructions": "Answer using only the supplied data.\n\nReturn only the numerical value.",
+  "question": "How many parameter records have schema format int32?",
+  "input": "openapi: 3.0.0\ninfo:\n  title: Synthetic Alpha Inventory API\n  version: 1.0.0\nx-fixture-id: 5\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: query\n          required: true\n          description: Blue inventory item\n          schema:\n            type: integer\n            format: int32\n            maximum: 10\n---\nopenapi: 3.0.0\ninfo:\n  title: Synthetic Bravo Inventory API\n  version: 1.0.0\nx-fixture-id: 5\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: header\n          required: true\n          description: Green inventory item\n          schema:\n            type: integer\n            format: int32\n            maximum: 20\n---\nopenapi: 3.0.0\ninfo:\n  title: Synthetic Charlie Inventory API\n  version: 1.0.0\nx-fixture-id: 5\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: query\n          required: false\n          description: Red inventory item\n          schema:\n            type: integer\n            format: int64\n            maximum: 30\n---\nopenapi: 3.0.0\ninfo:\n  title: Synthetic Delta Inventory API\n  version: 1.0.0\nx-fixture-id: 5\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: cookie\n          required: true\n          description: Gold inventory item\n          schema:\n            type: integer\n            format: int32\n            maximum: 40\n",
+  "task": "conditional_count",
+  "input_sha256": "bd9b422e3e0d96a86ceb69ec9e8df2b77d1c771c4e84545d72aa9230b5150426",
+  "sample_revision": "sample_contract_v2",
+  "metric_type": "approx_number_match"
+}

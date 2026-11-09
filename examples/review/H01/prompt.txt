@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+only the value
+
+Data
+On auto site 02 page 0200054, for the column where Engine Type is Twin Turbo Premium Unleaded V-8, what is the Horsepower @ RPM?
+
+Question
+On auto site 02 page 0200054, for the column where Engine Type is Twin Turbo Premium Unleaded V-8, what is the Horsepower @ RPM?

@@ -1,0 +1,41 @@
+{
+  "schema_version": "supplement_jss_license_bundle_v1",
+  "licenses": [
+    {
+      "repository": "eslint/eslint",
+      "commit": "6ddf8587e5cfeeb7328332601bb76d98b8a198ea",
+      "license": "eslint-LICENSE.txt",
+      "sha256": "3b6be04f862a077a4b97929dbf247299360824d9365f8603c263769303ace18c"
+    },
+    {
+      "repository": "webpack/webpack",
+      "commit": "2043f6e66e87a10e774ca200a5d0636a0a3f9aa3",
+      "license": "webpack-LICENSE.txt",
+      "sha256": "9068a8782d2fb4c6e432cfa25334efa56f722822180570802bf86e71b6003b1e"
+    },
+    {
+      "repository": "mrdoob/three.js",
+      "commit": "27e70ddf91e95c40d03bca7b2bac5a212e4c4151",
+      "license": "threejs-LICENSE.txt",
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "repository": "plotly/plotly.js",
+      "commit": "0af79ccbd45ffb9dcea3bad586b05ce328f4a993",
+      "license": "plotly-LICENSE.txt",
+      "sha256": "8c45d9eaf50c2f72dd9c7ab9ef440788ba58a3538484b5c51c1f17d5128752e7"
+    },
+    {
+      "repository": "babel/babel",
+      "commit": "86b96c84eef3545d49dd0af41b39d7c78ff82465",
+      "license": "babel-LICENSE.txt",
+      "sha256": "117da2af0d4ce0fe1c8e19b5cff9dcd806adf973d328d27b11d4448c4ff24f76"
+    },
+    {
+      "repository": "lodash/lodash",
+      "commit": "a666ba591064c8011988275790ad7d625279f09c",
+      "license": "lodash-LICENSE.txt",
+      "sha256": "f71e8ed126b46346494aad5486874cd8f0aafe95092ed67d2e3cb6110f939abc"
+    }
+  ]
+}

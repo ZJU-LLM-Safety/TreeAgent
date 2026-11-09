@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_dev_32k_numeric_extreme_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the number",
+  "question": "Across all supplied car-rental records, what is the lowest listed rental price in USD? Return only the numerical value; do not convert currencies.",
+  "input": "What is the cheapest base price available?",
+  "task": "numeric_extreme",
+  "input_sha256": "4bf138923bbdef72b661ca4bbe8ebc173e59f4deaf972304963eb52f1e3c0618",
+  "sample_revision": "sample_contract_v2",
+  "metric_type": "approx_number_match"
+}

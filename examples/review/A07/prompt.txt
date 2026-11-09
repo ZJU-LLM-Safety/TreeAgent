@@ -1,0 +1,1414 @@
+Instructions
+Answer using only the supplied data. Return only a JSON array, with one element per requested answer, in the order asked. Include no explanation.
+
+Use all supplied responses. Match strings and identifiers exactly, preserving JSON types and exact numeric values. Missing and null differ: null is present. Do not fill missing values or convert types.
+
+Data
+{
+    "uri": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2019-01-01T00:00:00&publishedTo=2019-12-31T23:59:59&stages=award&limit=10",
+    "version": "1.1",
+    "extensions": [
+        "https://standard.open-contracting.org/profiles/eu/master/en/extension.json",
+        "https://raw.githubusercontent.com/portaledcahn/ocds_tenderDatePublished_extension/master/extension.json",
+        "https://raw.githubusercontent.com/open-contracting-extensions/ocds_budget_breakdown_extension/master/extension.json",
+        "https://raw.githubusercontent.com/Crown-Commercial-Service/ocds_awards_datePublished_extension/main/extension.json",
+        "https://raw.githubusercontent.com/Crown-Commercial-Service/ocds_partyDetails_vcse_extension/main/extension.json",
+        "https://raw.githubusercontent.com/Crown-Commercial-Service/ocds_tender_suitability_extension/main/extension.json",
+        "https://raw.githubusercontent.com/open-contracting-extensions/ocds_pagination_extension/master/extension.json"
+    ],
+    "publishedDate": "2019-12-31T17:45:03Z",
+    "publisher": {
+        "name": "Cabinet Office",
+        "scheme": "GB-GOR",
+        "uid": "D2",
+        "uri": "https://www.gov.uk/government/organisations/cabinet-office"
+    },
+    "license": "http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "publicationPolicy": "https://www.gov.uk/government/publications/open-contracting",
+    "releases": [
+        {
+            "ocid": "ocds-b5fd17-11390a1b-521e-451e-9b28-5232f5c1224d",
+            "id": "07d44ad0-460f-4ebb-b7ba-d1bbd6eb659d-334678",
+            "language": "en",
+            "date": "2019-12-31T17:45:03Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "MT218470",
+                "title": "NECS336 Psychological Wellbeing Therapies Service",
+                "description": "North of England Commissioning Support (NECS) have worked for, and on behalf of, NHS Hartlepool & Stockton on Tees CCG and NHS South Tees CCG who have commissioned a Psychological Wellbeing Therapies Services, within the locality of Teesside.",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "85000000",
+                    "description": "Health and social work services"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "region": "North East",
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "value": {
+                    "amount": 52700000,
+                    "currency": "GBP"
+                },
+                "procurementMethod": "open",
+                "procurementMethodDetails": "Open procedure",
+                "tenderPeriod": {
+                    "endDate": "2019-10-14T23:59:59+01:00"
+                },
+                "contractPeriod": {
+                    "startDate": "2020-04-01T00:00:00+01:00",
+                    "endDate": "2027-03-31T23:59:59+01:00"
+                },
+                "suitability": {
+                    "sme": false,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "services"
+            },
+            "parties": [
+                {
+                    "id": "GB-CFS-125002",
+                    "name": "NHS Hartlepool & Stockton on Tees Clinical Commissioning Group",
+                    "identifier": {
+                        "legalName": "NHS Hartlepool & Stockton on Tees Clinical Commissioning Group"
+                    },
+                    "address": {
+                        "streetAddress": "Health Centre, Queensway",
+                        "locality": "Stockton on Tees, Billingham",
+                        "postalCode": "TS23 2LA",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "email": "NECSU.neprocurement@nhs.net"
+                    },
+                    "details": {
+                        "url": "https://www.hartlepoolandstocktonccg.nhs.uk/"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-CFS-133682",
+                    "name": "Alliance Psychological Services Limited",
+                    "identifier": {
+                        "legalName": "Alliance Psychological Services Limited"
+                    },
+                    "address": {
+                        "streetAddress": "Barton House, 24 Yarm Road,, Stockton-on-Tees"
+                    },
+                    "details": {
+                        "scale": "large",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-CFS-125002",
+                "name": "NHS Hartlepool & Stockton on Tees Clinical Commissioning Group"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-11390a1b-521e-451e-9b28-5232f5c1224d-1",
+                    "status": "active",
+                    "date": "2019-12-17T00:00:00Z",
+                    "datePublished": "2019-12-31T17:45:03Z",
+                    "value": {
+                        "amount": 52700000,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-CFS-133682",
+                            "name": "Alliance Psychological Services Limited"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2020-04-01T00:00:00+01:00",
+                        "endDate": "2027-03-31T23:59:59+01:00"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/07d44ad0-460f-4ebb-b7ba-d1bbd6eb659d",
+                            "datePublished": "2019-12-31T17:45:03Z",
+                            "format": "text/html",
+                            "language": "en"
+                        },
+                        {
+                            "id": "2",
+                            "documentType": "tenderNotice",
+                            "description": "NOTE: To register your interest in this notice and obtain any additional information please visit the myTenders Web Site at the link provided.",
+                            "url": "https://www.mytenders.co.uk/search/show/search_view.aspx?ID=DEC158962"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-fa9860cc-c748-4bc5-8600-27820f377baf",
+            "id": "7f218c2a-3ef0-4824-821f-f989a816ab62-334677",
+            "language": "en",
+            "date": "2019-12-31T16:57:57Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "CF-0090700D58000000L5A4EAK1",
+                "title": "LECN SD WAN Service and Supplier Assessment #1",
+                "description": "Enables a face-to-face engagement over the course of about a week with an SD WAN supplier, who will answer LECN programme questions and respond to scenarios, such that the LECN programme's understanding of what is available and its suitability is improved\r\n\r\nAdditional information: Relates to https://www.contractsfinder.service.gov.uk/Notice/648c6361-b30d-4182-8c83-1aa725b0e84c\r\n",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "72720000",
+                    "description": "Wide area network services"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "postalCode": "SW1P 4DF"
+                            },
+                            {
+                                "countryName": "British Oversea Territories"
+                            },
+                            {
+                                "countryName": "Channel Islands"
+                            },
+                            {
+                                "countryName": "Europe"
+                            },
+                            {
+                                "countryName": "Isle of Man"
+                            },
+                            {
+                                "countryName": "Rest of the World"
+                            },
+                            {
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "value": {
+                    "amount": 12000,
+                    "currency": "GBP"
+                },
+                "procurementMethod": "selective",
+                "procurementMethodDetails": "Call-off from a framework agreement",
+                "tenderPeriod": {
+                    "endDate": "2019-12-12T23:59:59Z"
+                },
+                "contractPeriod": {
+                    "startDate": "2020-01-01T00:00:00Z",
+                    "endDate": "2020-02-29T23:59:59Z"
+                },
+                "suitability": {
+                    "sme": true,
+                    "vcse": false
+                }
+            },
+            "parties": [
+                {
+                    "id": "GB-CFS-107236",
+                    "name": "Home Office",
+                    "identifier": {
+                        "legalName": "Home Office"
+                    },
+                    "address": {
+                        "streetAddress": "2 Marsham Street",
+                        "locality": "London",
+                        "postalCode": "SW1P 4DF",
+                        "countryName": "GB"
+                    },
+                    "contactPoint": {
+                        "name": "Roger Maxwell",
+                        "email": "roger.maxwell@homeoffice.gov.uk"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-CFS-133681",
+                    "name": "Exponential-e Ltd",
+                    "identifier": {
+                        "legalName": "Exponential-e Ltd"
+                    },
+                    "address": {
+                        "streetAddress": "100 Leman Street, London  E1 8EU E1 8EU"
+                    },
+                    "details": {
+                        "scale": "large",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-CFS-107236",
+                "name": "Home Office"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-fa9860cc-c748-4bc5-8600-27820f377baf-1",
+                    "status": "active",
+                    "date": "2019-12-18T00:00:00Z",
+                    "datePublished": "2019-12-31T16:57:57Z",
+                    "value": {
+                        "amount": 12000,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-CFS-133681",
+                            "name": "Exponential-e Ltd"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2020-01-01T00:00:00Z",
+                        "endDate": "2020-02-29T23:59:59Z"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/7f218c2a-3ef0-4824-821f-f989a816ab62",
+                            "datePublished": "2019-12-31T16:57:57Z",
+                            "format": "text/html",
+                            "language": "en"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-fc467147-7b15-44fa-9725-29d15a4df74f",
+            "id": "2f471a21-ad80-4e31-866a-135aa597fe42-334676",
+            "language": "en",
+            "date": "2019-12-31T15:30:17Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "CBC-316-19",
+                "title": "Chesterfield Borough Council - The Provision of design and project management for phase 2 of environmental improvement at London Borough Estate, Barrow Hill",
+                "description": "1.9\tThe Council has committed to undertaken an extensive programme of environmental improvement works at the London Borough estate at Barrow Hill. Phase 1 of the works to the estate is approaching completion and the Council is seeking a suitable qualified contractor to manage the ongoing design and project management for the second phase of works on the estate.  It is anticipated that the planning permission for the second phase will be approved in October 2019 and the appointment of a works contractor to deliver this programme of work will take place shortly after.\r\nHow to Express Interest in this Tender: \r\n\r\n1. Register your company on the eSourcing portal (this is only required once) - Browse to the eSourcing Portal: https://in-tendhost.co.uk/noecpc and click the link to register - Enter your correct business and user details - Note: your username will be the email address you have entered - you will also then shortly receive an email confirmation. \r\n2. Once registered access the site and from the Home page hover over \"Tenders\" on the tool bar  and select \"current tenders\" from the drop down options\r\n3. Express Interest in the tender you are interested in - Select `Express Interest` within the Tender Details ( located at the bottom of the synopsis).  On doing so, you will instantly have access to the Tender Management area for that tender.  Any available documentation will be available via the various relevant tabs.  You can access this area at any point by logging in, navigating to `My Tenders` and selecting `View Details`.\r\n4. Responding to the tender - There will be a tab allocated to any tender stage (e.g. SQ and/or ITT).  Under the `My Tender Return` area, you will be required to complete any mandatory questionnaires and upload any requested documentation. You can now use the `Correspondence` function to communicate with the buyer and seek any clarification (any clarifications will be found within the `Clarifications` tab). - Note the deadline for completion, then follow the onscreen instructions to complete and submit your response. - There may be a mixture of online and offline actions for you to perform (there is detailed online help available). \r\nYou must then submit your reply using the `Submit Return` button at the bottom of the page. If you require any further assistance please consult the online help, or contact the In-tend Support Desk.  Alerts will be sent to your request email addresses when any correspondence, alterations or clarifications are issued.\r\n\r\nAdditional information: How to Express Interest in this Tender: \r\n\r\n1. Register your company on the eSourcing portal (this is only required once) - Browse to the eSourcing Portal: https://in-tendhost.co.uk/noecpc and click the link to register - Enter your correct business and user details - Note: your username will be the email address you have entered - you will also then shortly receive an email confirmation. \r\n2. Once registered access the site and from the Home page hover over \"Tenders\" on the tool bar  and select \"current tenders\" from the drop down options\r\n3. Express Interest in the tender you are interested in - Select `Express Interest` within the Tender Details ( located at the bottom of the synopsis).  On doing so, you will instantly have access to the Tender Management area for that tender.  Any available documentation will be available via the various relevant tabs.  You can access this area at any point by logging in, navigating to `My Tenders` and selecting `View Details`.\r\n4. Responding to the tender - There will be a tab allocated to any tender stage (e.g. SQ and/or ITT).  Under the `My Tender Return` area, you will be required to complete any mandatory questionnaires and upload any requested documentation. You can now use the `Correspondence` function to communicate with the buyer and seek any clarification (any clarifications will be found within the `Clarifications` tab). - Note the deadline for completion, then follow the onscreen instructions to complete and submit your response. - There may be a mixture of online and offline actions for you to perform (there is detailed online help available). \r\nYou must then submit your reply using the `Submit Return` button at the bottom of the page. If you require any further assistance please consult the online help, or contact the In-tend Support Desk.  Alerts will be sent to your request email addresses when any correspondence, alterations or clarifications are issued.",
+                "datePublished": "2019-09-12T16:38:51+01:00",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "71242000",
+                    "description": "Project and design preparation, estimation of costs"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "countryName": "British Oversea Territories"
+                            },
+                            {
+                                "countryName": "Channel Islands"
+                            },
+                            {
+                                "countryName": "Europe"
+                            },
+                            {
+                                "countryName": "Isle of Man"
+                            },
+                            {
+                                "countryName": "Rest of the World"
+                            },
+                            {
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "procurementMethod": "open",
+                "procurementMethodDetails": "Open procedure (below threshold)",
+                "tenderPeriod": {
+                    "endDate": "2019-10-10T23:59:59+01:00"
+                },
+                "contractPeriod": {
+                    "startDate": "2019-10-29T00:00:00Z",
+                    "endDate": "2024-10-29T23:59:59Z"
+                },
+                "suitability": {
+                    "sme": true,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "services"
+            },
+            "parties": [
+                {
+                    "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/F9g68Y6N",
+                    "name": "Chesterfield Royal Nhs Foundation Trust",
+                    "identifier": {
+                        "legalName": "Chesterfield Royal Nhs Foundation Trust",
+                        "scheme": "GB-SRS",
+                        "id": "sid4gov.cabinetoffice.gov.uk/F9g68Y6N"
+                    },
+                    "address": {
+                        "streetAddress": "Chesterfield Road, Calow, Heath",
+                        "locality": "CHESTERFIELD",
+                        "postalCode": "S445BL",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "name": "Amanda Gregory",
+                        "email": "amanda.gregory4@nhs.net",
+                        "telephone": "01246 513563"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-COH-11709443",
+                    "name": "Eamonn Byrne Landscape Architects Ltd",
+                    "identifier": {
+                        "legalName": "Eamonn Byrne Landscape Architects Ltd",
+                        "scheme": "GB-COH",
+                        "id": "11709443"
+                    },
+                    "address": {
+                        "streetAddress": "5-6 King's Court\r\nShambles,York YO1 7LD"
+                    },
+                    "details": {
+                        "scale": "sme",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/F9g68Y6N",
+                "name": "Chesterfield Royal Nhs Foundation Trust"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-fc467147-7b15-44fa-9725-29d15a4df74f-1",
+                    "status": "active",
+                    "date": "2019-11-08T00:00:00Z",
+                    "datePublished": "2019-12-31T15:30:17Z",
+                    "value": {
+                        "amount": 127840,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-COH-11709443",
+                            "name": "Eamonn Byrne Landscape Architects Ltd"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2019-11-09T00:00:00Z",
+                        "endDate": "2024-11-09T23:59:59Z"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/2f471a21-ad80-4e31-866a-135aa597fe42",
+                            "datePublished": "2019-12-31T15:30:17Z",
+                            "format": "text/html",
+                            "language": "en"
+                        },
+                        {
+                            "id": "2",
+                            "documentType": "tenderNotice",
+                            "description": "In-tend portal",
+                            "url": "https://in-tendhost.co.uk/noecpc/aspx/Home"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-f1a56bd3-b426-43be-b021-e62f678813eb",
+            "id": "1211392d-bdd9-400f-92db-3f500d34978c-334670",
+            "language": "en",
+            "date": "2019-12-31T14:34:18Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "CBC/TPIC/2668/19",
+                "title": "Chesterfield Borough Council - Refurbishment of the Passenger lift at Tapton Innovation Centre",
+                "description": "Chesterfield Borough Council (\"the Authority\") is issuing this invitation to tender (\"ITT\") in connection with the competitive procurement of a refurbishment of passenger lift at Tapton Innovation Centre Chesterfield S41 0TZ.\r\nTapton Innovation Centre is a business enterprise centre comprising of a two storey multi occupied building with a variety of SME's conference facilities and reception. The centre is a busy commercial centre with approx.100 staff within the building. The project is to refurbish and upgrade the existing passenger lift Refurbishment and upgrade of passenger lift, including options for cosmetic upgrades to car interior and exterior landing entrances.\r\nHow to Express Interest in this Tender: \r\n\r\n1. Register your company on the eSourcing portal (this is only required once) - Browse to the eSourcing Portal: https://in-tendhost.co.uk/noecpc and click the link to register - Enter your correct business and user details - Note: your username will be the email address you have entered - you will also then shortly receive an email confirmation. \r\n2. Once registered access the site and from the Home page hover over \"Tenders\" on the tool bar  and select \"current tenders\" from the drop down options\r\n3. Express Interest in the tender you are interested in - Select `Express Interest` within the Tender Details ( located at the bottom of the synopsis).  On doing so, you will instantly have access to the Tender Management area for that tender.  Any available documentation will be available via the various relevant tabs.  You can access this area at any point by logging in, navigating to `My Tenders` and selecting `View Details`.\r\n4. Responding to the tender - There will be a tab allocated to any tender stage (e.g. SQ and/or ITT).  Under the `My Tender Return` area, you will be required to complete any mandatory questionnaires and upload any requested documentation. You can now use the `Correspondence` function to communicate with the buyer and seek any clarification (any clarifications will be found within the `Clarifications` tab). - Note the deadline for completion, then follow the onscreen instructions to complete and submit your response. - There may be a mixture of online and offline actions for you to perform (there is detailed online help available). \r\nYou must then submit your reply using the `Submit Return` button at the bottom of the page. If you require any further assistance please consult the online help, or contact the In-tend Support Desk.  Alerts will be sent to your request email addresses when any correspondence, alterations or clarifications are issued.",
+                "datePublished": "2019-08-19T16:36:05+01:00",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "45453100",
+                    "description": "Refurbishment work"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "countryName": "British Oversea Territories"
+                            },
+                            {
+                                "countryName": "Channel Islands"
+                            },
+                            {
+                                "countryName": "Europe"
+                            },
+                            {
+                                "countryName": "Isle of Man"
+                            },
+                            {
+                                "countryName": "Rest of the World"
+                            },
+                            {
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "procurementMethod": "open",
+                "procurementMethodDetails": "Open procedure (below threshold)",
+                "tenderPeriod": {
+                    "endDate": "2019-09-20T23:59:59+01:00"
+                },
+                "contractPeriod": {
+                    "startDate": "2019-11-04T00:00:00Z",
+                    "endDate": "2020-02-28T23:59:59Z"
+                },
+                "suitability": {
+                    "sme": true,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "services"
+            },
+            "parties": [
+                {
+                    "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/F9g68Y6N",
+                    "name": "Chesterfield Royal Nhs Foundation Trust",
+                    "identifier": {
+                        "legalName": "Chesterfield Royal Nhs Foundation Trust",
+                        "scheme": "GB-SRS",
+                        "id": "sid4gov.cabinetoffice.gov.uk/F9g68Y6N"
+                    },
+                    "address": {
+                        "streetAddress": "Chesterfield Road, Calow, Heath",
+                        "locality": "CHESTERFIELD",
+                        "postalCode": "S445BL",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "name": "Amanda Gregory",
+                        "email": "amanda.gregory4@nhs.net",
+                        "telephone": "01246 513563"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-COH-1189799",
+                    "name": "Stannah Lift Services Ltd",
+                    "identifier": {
+                        "legalName": "Stannah Lift Services Ltd",
+                        "scheme": "GB-COH",
+                        "id": "1189799"
+                    },
+                    "address": {
+                        "streetAddress": "Watt Close\r\nEast Portway \r\nAndover \r\nHants SP10 3SD"
+                    },
+                    "details": {
+                        "scale": "large",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-SRS-sid4gov.cabinetoffice.gov.uk/F9g68Y6N",
+                "name": "Chesterfield Royal Nhs Foundation Trust"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-f1a56bd3-b426-43be-b021-e62f678813eb-1",
+                    "status": "active",
+                    "date": "2019-10-29T00:00:00Z",
+                    "datePublished": "2019-12-31T14:34:18Z",
+                    "value": {
+                        "amount": 37250,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-COH-1189799",
+                            "name": "Stannah Lift Services Ltd"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2019-11-04T00:00:00Z",
+                        "endDate": "2020-02-28T23:59:59Z"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/1211392d-bdd9-400f-92db-3f500d34978c",
+                            "datePublished": "2019-12-31T14:34:18Z",
+                            "format": "text/html",
+                            "language": "en"
+                        },
+                        {
+                            "id": "2",
+                            "documentType": "tenderNotice",
+                            "description": "The e-Tendering Portal",
+                            "url": "https://in-tendhost.co.uk/noecpc/aspx/Home"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-0abe2923-2c4f-4a4a-88ba-296fe9a3243e",
+            "id": "c50a8043-c637-4b64-a74f-7f142f0f853e-334671",
+            "language": "en",
+            "date": "2019-12-31T14:27:14Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "tender_223981/825777",
+                "title": "WHHT - Vascular Respiratory Works",
+                "description": "A tender was conducted to award a contract to complete works to the Vascular Respiratory area at West Hertfordshire Hospitals NHS Trust. The best commercial responses was awarded the contract",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "45000000",
+                    "description": "Construction work"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "postalCode": "AL8 6NS"
+                            },
+                            {
+                                "region": "East of England",
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "minValue": {
+                    "amount": 35000,
+                    "currency": "GBP"
+                },
+                "value": {
+                    "amount": 55000,
+                    "currency": "GBP"
+                },
+                "procurementMethodDetails": "Other - Sub-OJEU tender",
+                "tenderPeriod": {
+                    "endDate": "2019-12-06T23:59:59Z"
+                },
+                "contractPeriod": {
+                    "startDate": "2019-12-31T00:00:00Z",
+                    "endDate": "2020-01-31T23:59:59Z"
+                },
+                "suitability": {
+                    "sme": true,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "works"
+            },
+            "parties": [
+                {
+                    "id": "GB-CFS-106669",
+                    "name": "Hertfordshire NHS Procurement",
+                    "identifier": {
+                        "legalName": "Hertfordshire NHS Procurement"
+                    },
+                    "address": {
+                        "streetAddress": "Gate House",
+                        "locality": "Welwyn Garden City",
+                        "postalCode": "AL8 6NS",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "name": "David McGrath",
+                        "email": "david.mcgrath3@nhs.net"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-CFS-133680",
+                    "name": "ADL-Building Service & Fit-Out LTD",
+                    "identifier": {
+                        "legalName": "ADL-Building Service & Fit-Out LTD"
+                    },
+                    "details": {
+                        "scale": "large",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-CFS-106669",
+                "name": "Hertfordshire NHS Procurement"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-0abe2923-2c4f-4a4a-88ba-296fe9a3243e-1",
+                    "status": "active",
+                    "date": "2019-12-31T00:00:00Z",
+                    "datePublished": "2019-12-31T14:27:14Z",
+                    "value": {
+                        "amount": 0,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-CFS-133680",
+                            "name": "ADL-Building Service & Fit-Out LTD"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2019-12-31T00:00:00Z",
+                        "endDate": "2020-01-31T23:59:59Z"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/c50a8043-c637-4b64-a74f-7f142f0f853e",
+                            "datePublished": "2019-12-31T14:27:14Z",
+                            "format": "text/html",
+                            "language": "en"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-9eff6b73-b9c2-4975-b996-d8322122f08d",
+            "id": "a5023e91-3100-4071-8b87-e64f8dfc41be-334667",
+            "language": "en",
+            "date": "2019-12-31T13:53:24Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "310042444",
+                "title": "Sewage Treatment Plant at Haysden Country Park",
+                "description": "Installation of sewage treatment plant",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "45000000",
+                    "description": "Construction work"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "region": "South East",
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "value": {
+                    "amount": 115000,
+                    "currency": "GBP"
+                },
+                "procurementMethod": "limited",
+                "procurementMethodDetails": "Competitive quotation (below threshold)",
+                "tenderPeriod": {
+                    "endDate": "2019-12-02T23:59:59Z"
+                },
+                "contractPeriod": {
+                    "startDate": "2020-02-01T00:00:00Z",
+                    "endDate": "2020-03-31T23:59:59+01:00"
+                },
+                "suitability": {
+                    "sme": true,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "works"
+            },
+            "parties": [
+                {
+                    "id": "GB-LAE-TON",
+                    "name": "Tonbridge & Malling Borough Council",
+                    "identifier": {
+                        "legalName": "Tonbridge & Malling Borough Council",
+                        "scheme": "GB-LAE",
+                        "id": "TON"
+                    },
+                    "address": {
+                        "streetAddress": "Gibson Drive",
+                        "locality": "WEST MALLING",
+                        "postalCode": "ME194LZ",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "email": "technical.services@tmbc.gov.uk"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-CFS-133679",
+                    "name": "Ward Environmental Services Ltd",
+                    "identifier": {
+                        "legalName": "Ward Environmental Services Ltd"
+                    },
+                    "address": {
+                        "streetAddress": "13 Ford Road\r\nArundel\r\nWest Sussex\r\nBN18 9DX"
+                    },
+                    "details": {
+                        "scale": "sme",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-LAE-TON",
+                "name": "Tonbridge & Malling Borough Council"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-9eff6b73-b9c2-4975-b996-d8322122f08d-1",
+                    "status": "active",
+                    "date": "2019-12-20T00:00:00Z",
+                    "datePublished": "2019-12-31T13:53:24Z",
+                    "value": {
+                        "amount": 115000,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-CFS-133679",
+                            "name": "Ward Environmental Services Ltd"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2020-02-01T00:00:00Z",
+                        "endDate": "2020-03-31T23:59:59+01:00"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/a5023e91-3100-4071-8b87-e64f8dfc41be",
+                            "datePublished": "2019-12-31T13:53:24Z",
+                            "format": "text/html",
+                            "language": "en"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-6c1c9fb3-4d3b-4df3-81e1-55f543f6b307",
+            "id": "b5689b2b-feff-45ba-b873-f66de71353e8-334666",
+            "language": "en",
+            "date": "2019-12-31T13:26:54Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "TD1343",
+                "title": "Telecare System",
+                "description": "Tenders were invited for the supply of a telecare system comprising a call handling platform and the central equipment to operate the platform. The system is required to maintain compatibility with existing telecare equipment, and with additional compatible peripheral equipment to be purchased in the future (separate to this tender exercise and contract). \r\n\r\nDerby City Council Carelink provides a non-statutory community alarm call handling service, and installs telecare equipment to help people remain independent in their own homes. The current IT system is a call handling platform for managing alerts raised from community equipment installed in customers' homes. The system is hosted on a separate network with its own servers in the Council House, which are approaching the end of their life.  Derby City Council therefore need to replace the existing system, maintaining compatibility with existing telecare equipment and to be compatible with telecare equipment procured in the future. The contract will be for call handling platform and the central equipment to operate the platform. \r\n\r\nThe system needs to enable team members to programme equipment on site and remotely access the call handling system, and the Supplier is required to implement the newly procured system with Carelink\r\n\r\nThere is a maximum budget of £150,000 for the implementation, and although annual budgets for the support and maintenance have not yet been finalised for the potential maximum length of the contract, it is anticipated the annual level of funding will not exceed £30,000. The total contract value has therefore been set at £450,000. \r\n\r\nThere will be options to extend the contract for up to five years in annual increments, subject to satisfactory performance and business needs. The maximum contract term is ten years. \r\n\r\n",
+                "datePublished": "2019-03-21T15:46:58Z",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "48000000",
+                    "description": "Software package and information systems"
+                },
+                "additionalClassifications": [
+                    {
+                        "scheme": "CPV",
+                        "id": "85323000",
+                        "description": "Community health services"
+                    }
+                ],
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "region": "East Midlands",
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "value": {
+                    "amount": 450000,
+                    "currency": "GBP"
+                },
+                "procurementMethod": "open",
+                "procurementMethodDetails": "Open procedure (above threshold)",
+                "tenderPeriod": {
+                    "endDate": "2019-04-18T23:59:59+01:00"
+                },
+                "contractPeriod": {
+                    "startDate": "2020-04-01T00:00:00+01:00",
+                    "endDate": "2025-03-31T23:59:59+01:00"
+                },
+                "suitability": {
+                    "sme": false,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "services"
+            },
+            "parties": [
+                {
+                    "id": "GB-LAE-DER",
+                    "name": "Derby City Council",
+                    "identifier": {
+                        "legalName": "Derby City Council",
+                        "scheme": "GB-LAE",
+                        "id": "DER"
+                    },
+                    "address": {
+                        "streetAddress": "Corporation Street",
+                        "locality": "Derby",
+                        "postalCode": "DE12FS",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "name": "Andrew Grover",
+                        "email": "procurement@derby.gov.uk",
+                        "telephone": "01332640768"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-COH-115834",
+                    "name": "Legrand Electric Ltd",
+                    "identifier": {
+                        "legalName": "Legrand Electric Ltd",
+                        "scheme": "GB-COH",
+                        "id": "115834"
+                    },
+                    "address": {
+                        "streetAddress": "20 Great King Street North\nB70 0EB\nGB"
+                    },
+                    "details": {
+                        "scale": "large",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-LAE-DER",
+                "name": "Derby City Council"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-6c1c9fb3-4d3b-4df3-81e1-55f543f6b307-1",
+                    "status": "active",
+                    "date": "2019-10-18T00:00:00+01:00",
+                    "datePublished": "2019-12-31T13:26:54Z",
+                    "value": {
+                        "amount": 450000,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-COH-115834",
+                            "name": "Legrand Electric Ltd"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2020-04-01T00:00:00+01:00",
+                        "endDate": "2024-03-31T23:59:59+01:00"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/b5689b2b-feff-45ba-b873-f66de71353e8",
+                            "datePublished": "2019-12-31T13:26:54Z",
+                            "format": "text/html",
+                            "language": "en"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-97364321-48fe-4911-901a-3e7250376546",
+            "id": "27a7bdd7-17a7-4446-b62b-3dbda0206462-334665",
+            "language": "en",
+            "date": "2019-12-31T13:14:27Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "ENQ544",
+                "title": "Online Booking and Learning Platform for DDSCP",
+                "description": "Derby City Council is part of the new Derby and Derbyshire Safeguarding Children Partnership (DDSCP) being implemented on 29/09/2019. The DDSCP will provide safeguarding children training across Derby and Derbyshire. To achieve this, the new partnership required an online booking and learning platform. The online booking and learning platform will permit staff from different agencies to choose and book courses; access training materials for courses; access and complete online learning packages; complete evaluations of the training and its impact as a pre requisite to receipt of a certificate confirming the completion of professional development. The online booking and learning platform is the method by which around 5000 staff per annum will book their training with additional staff accessing online learning.\r\n\r\nThe online booking and learning platform will provide effective publication of the training programme and processing of applications for courses by the DDSCP business team including the allocation of places for courses, monitoring take up on individual courses, and confirmation of place allocation direct to applicants (and as necessary changes to dates/availability to participants booked on courses). The platform will permit appropriate retention of data held on courses applicants.\r\n\r\nThe online booking and learning platform will provide a technical solution to enable to development of online learning courses by the DDSCP team for delivery of remote learning to a multi-agency audience of learners on a range of topics.\r\n\r\nThe online booking and learning platform will provide the opportunity for management analysis of take up and attendance of staff at an individual level and organisational level against expected \"pathways\" that set out the requirements for staff to complete safeguarding training relevant to their role and responsibilities. There will also be management analysis of the effectiveness of training including take up by staff, content and delivery of individual courses and the impact on practice.\r\n\r\nThe online booking and learning platform will provide a method by which agencies can complete required audit pro-forma and management analysis can be completed on the submitted data to produce audits of safeguarding arrangements across different sectors.",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "48000000",
+                    "description": "Software package and information systems"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "region": "East Midlands",
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "value": {
+                    "amount": 94592,
+                    "currency": "GBP"
+                },
+                "procurementMethod": "limited",
+                "procurementMethodDetails": "Competitive quotation (below threshold)",
+                "tenderPeriod": {
+                    "endDate": "2019-10-21T23:59:59+01:00"
+                },
+                "contractPeriod": {
+                    "startDate": "2019-11-25T00:00:00Z",
+                    "endDate": "2023-11-24T23:59:59Z"
+                },
+                "suitability": {
+                    "sme": true,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "services"
+            },
+            "parties": [
+                {
+                    "id": "GB-LAE-DER",
+                    "name": "Derby City Council",
+                    "identifier": {
+                        "legalName": "Derby City Council",
+                        "scheme": "GB-LAE",
+                        "id": "DER"
+                    },
+                    "address": {
+                        "streetAddress": "Corporation Street",
+                        "locality": "Derby",
+                        "postalCode": "DE12FS",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "name": "Andrew Grover",
+                        "email": "procurement@derby.gov.uk",
+                        "telephone": "+44 1332640768"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-COH-04219588",
+                    "name": "PHEW DESIGN LIMITED",
+                    "identifier": {
+                        "legalName": "PHEW DESIGN LIMITED",
+                        "scheme": "GB-COH",
+                        "id": "04219588"
+                    },
+                    "address": {
+                        "streetAddress": "Bedford Technology Park, Thurleigh\nBEDFORD\nBedfordshire\nMK44 2YA\nGB"
+                    },
+                    "details": {
+                        "scale": "sme",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-LAE-DER",
+                "name": "Derby City Council"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-97364321-48fe-4911-901a-3e7250376546-1",
+                    "status": "active",
+                    "date": "2019-11-07T00:00:00Z",
+                    "datePublished": "2019-12-31T13:14:27Z",
+                    "value": {
+                        "amount": 94592,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-COH-04219588",
+                            "name": "PHEW DESIGN LIMITED"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2019-11-25T00:00:00Z",
+                        "endDate": "2023-11-24T23:59:59Z"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/27a7bdd7-17a7-4446-b62b-3dbda0206462",
+                            "datePublished": "2019-12-31T13:14:27Z",
+                            "format": "text/html",
+                            "language": "en"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-77de1206-a8bb-435c-83b4-3d85125843a0",
+            "id": "407619fe-17a3-4d14-81e5-f361a77708e5-334663",
+            "language": "en",
+            "date": "2019-12-31T12:40:35Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "LGSS001-DN415250-59654067",
+                "title": "Further Competition from ESPO 664 Lot 5 - New Town to the North East Cambridge Public Transport Study",
+                "description": "New Town to the North East Cambridge Public Transport Study\r\n\r\nStudy to investigate options for the development of a Public Transport corridor between New Town to the North of Cambridge and North East Cambridge, including measures for NMUs.",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "71311200",
+                    "description": "Transport systems consultancy services"
+                },
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "region": "East of England",
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "value": {
+                    "amount": 230000,
+                    "currency": "GBP"
+                },
+                "procurementMethodDetails": "Other - ",
+                "tenderPeriod": {
+                    "endDate": "2019-08-05T23:59:59+01:00"
+                },
+                "contractPeriod": {
+                    "startDate": "2019-09-01T00:00:00+01:00",
+                    "endDate": "2020-09-14T23:59:59+01:00"
+                },
+                "suitability": {
+                    "sme": false,
+                    "vcse": false
+                },
+                "mainProcurementCategory": "services"
+            },
+            "parties": [
+                {
+                    "id": "GB-CFS-58580",
+                    "name": "Cambridgeshire County Council",
+                    "identifier": {
+                        "legalName": "Cambridgeshire County Council"
+                    },
+                    "address": {
+                        "streetAddress": "Shire Hall, Castle Hill",
+                        "locality": "Cambridge",
+                        "postalCode": "CB3 0AP",
+                        "countryName": "England"
+                    },
+                    "contactPoint": {
+                        "email": "Debbie.Bondi@cambridgeshire.gov.uk"
+                    },
+                    "details": {
+                        "url": "https://www.lgss.co.uk/about/"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-CFS-10589",
+                    "name": "Atkins Limited",
+                    "identifier": {
+                        "legalName": "Atkins Limited"
+                    },
+                    "address": {
+                        "streetAddress": "Woodcote Grove, Ashley Road, Epsom, Surrey, KT18 5BW"
+                    },
+                    "details": {
+                        "scale": "large",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-CFS-58580",
+                "name": "Cambridgeshire County Council"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-77de1206-a8bb-435c-83b4-3d85125843a0-1",
+                    "status": "active",
+                    "date": "2019-09-02T00:00:00+01:00",
+                    "datePublished": "2019-12-31T12:40:35Z",
+                    "value": {
+                        "amount": 163995,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-CFS-10589",
+                            "name": "Atkins Limited"
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2019-10-01T00:00:00+01:00",
+                        "endDate": "2021-01-12T23:59:59Z"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/407619fe-17a3-4d14-81e5-f361a77708e5",
+                            "datePublished": "2019-12-31T12:40:35Z",
+                            "format": "text/html",
+                            "language": "en"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "ocid": "ocds-b5fd17-e1be4a6c-6534-4123-80bb-44392b7923dd",
+            "id": "744a73f5-0859-44c7-b423-f84c18fee97d-334662",
+            "language": "en",
+            "date": "2019-12-31T12:33:39Z",
+            "tag": [
+                "award"
+            ],
+            "initiationType": "tender",
+            "tender": {
+                "id": "GLOSCC001-DN454689-73382848",
+                "title": "C125ES - Alderman Knight School to Cheltenham",
+                "description": "Home to school transport.\r\nPassenger transport service.",
+                "status": "complete",
+                "classification": {
+                    "scheme": "CPV",
+                    "id": "60120000",
+                    "description": "Taxi services"
+                },
+                "additionalClassifications": [
+                    {
+                        "scheme": "CPV",
+                        "id": "60140000",
+                        "description": "Non-scheduled passenger transport"
+                    },
+                    {
+                        "scheme": "CPV",
+                        "id": "60130000",
+                        "description": "Special-purpose road passenger-transport services"
+                    },
+                    {
+                        "scheme": "CPV",
+                        "id": "60170000",
+                        "description": "Hire of passenger transport vehicles with driver"
+                    },
+                    {
+                        "scheme": "CPV",
+                        "id": "60112000",
+                        "description": "Public road transport services"
+                    }
+                ],
+                "items": [
+                    {
+                        "id": "1",
+                        "deliveryAddresses": [
+                            {
+                                "region": "South West",
+                                "countryName": "United Kingdom"
+                            }
+                        ]
+                    }
+                ],
+                "value": {
+                    "amount": 93590,
+                    "currency": "GBP"
+                },
+                "procurementMethodDetails": "Other - ",
+                "tenderPeriod": {
+                    "endDate": "2019-12-30T23:59:59Z"
+                },
+                "contractPeriod": {
+                    "startDate": "2020-01-06T00:00:00Z",
+                    "endDate": "2025-07-31T23:59:59+01:00"
+                },
+                "suitability": {
+                    "sme": true,
+                    "vcse": true
+                },
+                "mainProcurementCategory": "services"
+            },
+            "parties": [
+                {
+                    "id": "GB-CFS-53429",
+                    "name": "Gloucestershire County Council",
+                    "identifier": {
+                        "legalName": "Gloucestershire County Council"
+                    },
+                    "address": {
+                        "streetAddress": "Shire Hall",
+                        "locality": "Gloucester",
+                        "postalCode": "GL1 2TG",
+                        "countryName": "United Kingdom"
+                    },
+                    "contactPoint": {
+                        "name": "Dainis Salenieks",
+                        "email": "dainis.salenieks@gloucestershire.gov.uk"
+                    },
+                    "roles": [
+                        "buyer"
+                    ]
+                },
+                {
+                    "id": "GB-CFS-125481",
+                    "name": "Tim's Transport Ltd.",
+                    "identifier": {
+                        "legalName": "Tim's Transport Ltd."
+                    },
+                    "address": {
+                        "streetAddress": "GL2 9LH"
+                    },
+                    "details": {
+                        "scale": "sme",
+                        "vcse": false
+                    },
+                    "roles": [
+                        "supplier"
+                    ]
+                }
+            ],
+            "buyer": {
+                "id": "GB-CFS-53429",
+                "name": "Gloucestershire County Council"
+            },
+            "awards": [
+                {
+                    "id": "ocds-b5fd17-e1be4a6c-6534-4123-80bb-44392b7923dd-1",
+                    "status": "active",
+                    "date": "2019-12-31T00:00:00Z",
+                    "datePublished": "2019-12-31T12:33:39Z",
+                    "value": {
+                        "amount": 93590,
+                        "currency": "GBP"
+                    },
+                    "suppliers": [
+                        {
+                            "id": "GB-CFS-125481",
+                            "name": "Tim's Transport Ltd."
+                        }
+                    ],
+                    "contractPeriod": {
+                        "startDate": "2020-01-06T00:00:00Z",
+                        "endDate": "2025-07-31T23:59:59+01:00"
+                    },
+                    "documents": [
+                        {
+                            "id": "1",
+                            "documentType": "awardNotice",
+                            "description": "Awarded contract notice on Contracts Finder",
+                            "url": "https://www.contractsfinder.service.gov.uk/Notice/744a73f5-0859-44c7-b423-f84c18fee97d",
+                            "datePublished": "2019-12-31T12:33:39Z",
+                            "format": "text/html",
+                            "language": "en"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "links": {
+        "next": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search?publishedFrom=2019-01-01T00:00:00&publishedTo=2019-12-31T23:59:59&stages=award&limit=10&cursor=cHVibGlzaGVkRnJvbT0yMDE5LTAxLTAxVDAwOjAwOjAwfHB1Ymxpc2hlZFRvPTIwMTktMTItMzFUMjM6NTk6NTl8c3RhZ2VzPWF3YXJkfGxpbWl0PTEwfG5leHRDdXJzb3I9MjU0NDgy"
+    }
+}
+
+Question
+Which three procurement-method details values occur most frequently across all Contracts Finder release records?
+
+Count each record or entry occurrence separately, including repetitions within the same parent.
+
+Return the values in decreasing frequency order; values tied within the top three may exchange their tied positions.
+
+Consider only entries where procurement-method details is present and procurement-method details does not equal null.

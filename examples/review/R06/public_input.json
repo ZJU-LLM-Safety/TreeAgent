@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_test_8k_conditional_count_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the integer count",
+  "question": "How many flight legs have arrival country code CA?",
+  "input": "How many flight legs have arrival country code CA?",
+  "task": "conditional_count",
+  "input_sha256": "e0a2b830e9c9e85c27f50500055e8992f1393fc36b0bbc192abfcc17a0a391ae",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For room 59354301_371922173_3_2_0, return the child capacity, adult capacity, all-inclusive room price, gross room price.
+
+Question
+For room 59354301_371922173_3_2_0, return the child capacity, adult capacity, all-inclusive room price, gross room price.

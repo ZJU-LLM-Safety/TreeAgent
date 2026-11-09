@@ -1,0 +1,11 @@
+{
+  "uid": "html_websrc_v4_test_8k_record_field_lookup_00000",
+  "context_format": "html",
+  "instructions": "Answer using only the supplied data.\n\nonly the value",
+  "question": "On auto site 02 page 0200054, for the column where Engine Type is Twin Turbo Premium Unleaded V-8, what is the Horsepower @ RPM?",
+  "input": "On auto site 02 page 0200054, for the column where Engine Type is Twin Turbo Premium Unleaded V-8, what is the Horsepower @ RPM?",
+  "task": "record_field_lookup",
+  "input_sha256": "2b853c7224034b6d319d6e949fd6e4966e1578ba2277e775c5355a108037c327",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

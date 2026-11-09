@@ -1,0 +1,23 @@
+{
+  "records": [
+    {
+      "account": "alpha",
+      "region": "north",
+      "balance": 90
+    },
+    {
+      "account": "beta",
+      "region": "south",
+      "balance": 120
+    },
+    {
+      "account": "gamma",
+      "region": "west",
+      "balance": 75
+    }
+  ],
+  "metadata": {
+    "currency": "USD",
+    "snapshot": "fixture"
+  }
+}

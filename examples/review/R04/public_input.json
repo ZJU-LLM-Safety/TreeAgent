@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_test_8k_record_multi_field_2_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "For hotel 1865491, return the search result position, ranking position.",
+  "input": "For hotel 1865491, return the search result position, ranking position.",
+  "task": "record_multi_field_2",
+  "input_sha256": "e92588f4e4d5f2b7b62ecba2f99777b0b95bd2c58226a23bc4bf6c91827d5019",
+  "sample_revision": "source_preserved",
+  "metric_type": "ordered_list_str_match"
+}

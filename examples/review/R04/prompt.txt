@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For hotel 1865491, return the search result position, ranking position.
+
+Question
+For hotel 1865491, return the search result position, ranking position.

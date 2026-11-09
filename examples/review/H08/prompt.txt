@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+only the value
+
+Data
+Across all semantic HTML records in the corpus, what is the min Destination value?
+
+Question
+Across the vehicle columns in the supplied HTML comparison tables, what is the smallest numeric amount shown in the Destination field?

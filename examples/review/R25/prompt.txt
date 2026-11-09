@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+only the number
+
+Data
+What is the cheapest base price available?
+
+Question
+Across all supplied car-rental records, what is the lowest listed rental price in USD? Return only the numerical value; do not convert currencies.

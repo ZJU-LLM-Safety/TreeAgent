@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+only the integer count
+
+Data
+How many cars have value-for-money rating of at least 8.1?
+
+Question
+How many cars have value-for-money rating of at least 8.1?

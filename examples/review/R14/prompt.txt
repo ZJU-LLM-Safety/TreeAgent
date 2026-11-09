@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For product PRuYCCVyFX3d, return the free cancellation policy, rating total, public price, average rating.
+
+Question
+For product PRuYCCVyFX3d, return the free cancellation policy, rating total, public price, average rating.

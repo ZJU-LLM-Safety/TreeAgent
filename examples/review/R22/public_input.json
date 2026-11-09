@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_dev_32k_record_multi_field_4_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "For car 372903916, return its drive-away price in USD, cleanliness rating, listed rental price in USD, and base-currency deposit in INR, in that order. Give one value per line without labels or explanations; do not convert currencies.",
+  "input": "For car 372903916, return the drive-away price, cleanliness rating, base price, deposit.",
+  "task": "record_multi_field_4",
+  "input_sha256": "1d673c29f996e0b83ac2dbffaf8302e8346a6abfdd4591dddad6fcdbc868de53",
+  "sample_revision": "sample_contract_v2",
+  "metric_type": "ordered_list_str_match"
+}

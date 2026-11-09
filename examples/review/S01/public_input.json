@@ -1,0 +1,11 @@
+{
+  "uid": "yaml_synthetic_fixture_00_record_field_lookup",
+  "context_format": "yaml",
+  "instructions": "Answer using only the supplied data.\n\nReturn only the value.",
+  "question": "For the limit parameter in Synthetic Alpha Inventory API, what is the required flag?",
+  "input": "openapi: 3.0.0\ninfo:\n  title: Synthetic Alpha Inventory API\n  version: 1.0.0\nx-fixture-id: 0\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: query\n          required: true\n          description: Blue inventory item\n          schema:\n            type: integer\n            format: int32\n            maximum: 10\n---\nopenapi: 3.0.0\ninfo:\n  title: Synthetic Bravo Inventory API\n  version: 1.0.0\nx-fixture-id: 0\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: header\n          required: true\n          description: Green inventory item\n          schema:\n            type: integer\n            format: int32\n            maximum: 20\n---\nopenapi: 3.0.0\ninfo:\n  title: Synthetic Charlie Inventory API\n  version: 1.0.0\nx-fixture-id: 0\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: query\n          required: false\n          description: Red inventory item\n          schema:\n            type: integer\n            format: int64\n            maximum: 30\n---\nopenapi: 3.0.0\ninfo:\n  title: Synthetic Delta Inventory API\n  version: 1.0.0\nx-fixture-id: 0\npaths:\n  /items:\n    get:\n      parameters:\n        - name: limit\n          in: cookie\n          required: true\n          description: Gold inventory item\n          schema:\n            type: integer\n            format: int32\n            maximum: 40\n",
+  "task": "record_field_lookup",
+  "input_sha256": "8ec1064ed6f5c012e97c0887acb8c7c8ece36fd0ed036c02e98f43ba9a1f06c0",
+  "sample_revision": "sample_contract_v2",
+  "metric_type": "accuracy_string"
+}

@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_train_32k_record_multi_field_4_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "For product PRuYCCVyFX3d, return the free cancellation policy, rating total, public price, average rating.",
+  "input": "For product PRuYCCVyFX3d, return the free cancellation policy, rating total, public price, average rating.",
+  "task": "record_multi_field_4",
+  "input_sha256": "683a1aa65a555d757c12ceeac5ed81f1b9b851bee11050ccf1278d6e731d8cfb",
+  "sample_revision": "source_preserved",
+  "metric_type": "ordered_list_str_match"
+}

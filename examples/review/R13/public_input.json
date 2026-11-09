@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_train_32k_record_multi_field_2_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "For flight leg 662, return the departure country, arrival airport code.",
+  "input": "For flight leg 662, return the departure country, arrival airport code.",
+  "task": "record_multi_field_2",
+  "input_sha256": "edb1f5b51f33dd2faa2256586864bcd11cf3de2127d51a2d2e616dcbc225b075",
+  "sample_revision": "source_preserved",
+  "metric_type": "ordered_list_str_match"
+}

@@ -1,0 +1,3 @@
+{"id":"scalar","prediction":"120","gold":"120","metric_type":"approx_number_match"}
+{"id":"ordered-partial","prediction":"alpha\nbeta","gold":"alpha\ngamma","metric_type":"ordered_list_str_match"}
+{"id":"string-wrong","prediction":"north","gold":"south","metric_type":"accuracy_string"}

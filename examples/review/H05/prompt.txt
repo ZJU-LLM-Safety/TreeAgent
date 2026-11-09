@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For the row where Season is CAREER on sports site 16 page 1600081, return these 4 distinct fields. Give one value per line in F1-to-F4 order, without field names or explanations. F1: 3P% F2: FT% F3: 3PA F4: 3PM
+
+Question
+For the row where Season is CAREER on sports site 16 page 1600081, return these 4 distinct fields. Give one value per line in F1-to-F4 order, without field names or explanations. F1: 3P% F2: FT% F3: 3PA F4: 3PM

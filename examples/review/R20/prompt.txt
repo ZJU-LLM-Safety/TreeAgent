@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For cars 453412138, 765089186, 765089336, and 691867331, return the condition rating of each car.
+
+Question
+For cars 453412138, 765089186, 765089336, and 691867331, return the condition rating of each car.

@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations
+
+Data
+For flight legs 327, 603, 1030, and 9099, return the flight leg duration of each flight leg.
+
+Question
+For flight legs 327, 603, 1030, and 9099, return the flight leg duration of each flight leg.

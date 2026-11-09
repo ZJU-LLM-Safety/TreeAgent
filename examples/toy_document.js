@@ -1,0 +1,5 @@
+const records = [
+  {name: "Alpha", price: 1111},
+  {name: "Bravo", price: 2222}
+];
+const metadata = {currency: "USD"};

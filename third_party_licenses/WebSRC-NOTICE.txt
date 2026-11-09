@@ -1,0 +1,12 @@
+WebSRC v1.0 representative-record notice
+
+The HTML representative records in this package derive from the
+WebSRC v1.0 test archive distributed as X-LANCE/WebSRC_v1.0.
+
+The dataset declares the Creative Commons Attribution 4.0 International
+license (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+The packaged records retain their benchmark source identifiers. They have been
+transformed into long-context structured-question examples; no endorsement by
+the original dataset authors is implied.

@@ -1,0 +1,58 @@
+{
+  "scope": "TreeAgent sectioning, memory links, and retrieval settings",
+  "flat_budget_tokens": 5000,
+  "tree_budget_min_tokens": 5000,
+  "tree_budget_max_tokens": 9999,
+  "candidate_search": {
+    "json": "endpoints_and_binary_probes; compare_all_visited",
+    "native": "endpoints_and_binary_probes; compare_all_visited"
+  },
+  "candidate_order": [
+    "absolute_count_difference",
+    "prefer_count_at_least_flat",
+    "smaller_budget"
+  ],
+  "sibling_range": "zero_based_inclusive_child_positions",
+  "segment_indices": "one_based",
+  "residual_policy": "child_to_parent_final_segment",
+  "residual_top_k": 4,
+  "residual_item_max_tokens": 96,
+  "residual_score_input": "full_memory_span_only_before_truncation",
+  "root_target": true,
+  "deduplicate_sources_by": "segment_index",
+  "supported_formats": [
+    "json",
+    "html",
+    "yaml",
+    "javascript"
+  ],
+  "shared_components": [
+    "partition_tree",
+    "choose_budget",
+    "annotate_tree_links",
+    "ResidualMemoryStore",
+    "run_memory_agent",
+    "build_infmem_retrieval_corpus"
+  ],
+  "native_source_serialization": "original_subtree_content_separate_source_wrappers",
+  "json_serialization": "compact_value",
+  "infmem_retrieval": {
+    "methods": [
+      "flat",
+      "treeagent"
+    ],
+    "corpus": "shared_original_raw_text",
+    "chunk_tokens": 500,
+    "overlap_tokens": 100,
+    "canonical_raw_window_tokens": 5000,
+    "structural_retrieval_chunks": false,
+    "include_structural_paths": false,
+    "ranking": "host_native_bm25_unchanged",
+    "controller": "host_supplied"
+  },
+  "json_string_fragments": {
+    "enclosing_structure": true,
+    "natural_boundary_min_fill": 0.8,
+    "wrapper_budget": "separate"
+  }
+}

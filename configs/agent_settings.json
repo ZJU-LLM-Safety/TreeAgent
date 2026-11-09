@@ -1,0 +1,52 @@
+{
+  "checkpoints": {
+    "MemAgent-7B": {
+      "parameter_scale": "7B",
+      "repository": "BytedTsinghua-SIA/RL-MemoryAgent-7B"
+    },
+    "InfMem-4B": {
+      "parameter_scale": "4B",
+      "repository": "ucmp137538/infmem-4B"
+    },
+    "MemReread-4B": {
+      "parameter_scale": "4B",
+      "repository": "iiiiGray/MemReread-4B"
+    },
+    "ReMemR1-7B": {
+      "parameter_scale": "7B",
+      "repository": "yrshi/ReMemR1-7B"
+    }
+  },
+  "decoding": {
+    "temperature": 0,
+    "top_p": 1.0,
+    "seed_when_supported": 42,
+    "sample_seed": 42,
+    "python_hash_seed": 0
+  },
+  "generation_limits": {
+    "MemAgent-7B": {
+      "memory_tokens": 1024,
+      "answer_tokens": 1024,
+      "request_tokens": 32768
+    },
+    "InfMem-4B": {
+      "memory_tokens": 1024,
+      "answer_tokens": 1024,
+      "controller_tokens": 1024,
+      "request_tokens": 32768
+    },
+    "MemReread-4B": {
+      "memory_tokens": 1024,
+      "answer_tokens": 1024,
+      "controller_tokens": 8192,
+      "request_tokens": 40960
+    },
+    "ReMemR1-7B": {
+      "memory_tokens": 2048,
+      "answer_tokens": 2048,
+      "controller_tokens": 1024,
+      "request_tokens": 32768
+    }
+  }
+}

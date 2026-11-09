@@ -1,0 +1,238 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, in the order requested
+
+Data
+// @structured-javascript-source {"binding":"extendFlat.lightposition","code_sha256":"e5243bf63ba8a2d5e5c05a6bd2033cf1faa9847daf8c07c5c33200e3d38388c2","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_c14523dc6ddedddea935","initializer_sha256":"88af751b1a049a0b18c6aaf619cbe6a067b6976aeb8424a83feb2e3243ebab18","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"src/traces/surface/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":7232,"source_start_byte":6414}
+const __structured_javascript_state_c14523dc6ddedddea935 = {
+                x: {
+                    valType: 'number',
+                    min: -1e5,
+                    max: 1e5,
+                    dflt: 10,
+                    description: 'Numeric vector, representing the X coordinate for each vertex.'
+                },
+                y: {
+                    valType: 'number',
+                    min: -1e5,
+                    max: 1e5,
+                    dflt: 1e4,
+                    description: 'Numeric vector, representing the Y coordinate for each vertex.'
+                },
+                z: {
+                    valType: 'number',
+                    min: -1e5,
+                    max: 1e5,
+                    dflt: 0,
+                    description: 'Numeric vector, representing the Z coordinate for each vertex.'
+                }
+            };
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"39d6eff0994571cab3885823c1a59749b403418c8e7745e02feddc8fbecb8914","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_9dc61588adbc4ab15b3f","initializer_sha256":"a9797c314529a0a0ca3c87657339aa6cab3712b0caf51af20e91c99c49b3fe2c","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-restricted-globals.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":11617,"source_start_byte":11394}
+const __structured_javascript_state_9dc61588adbc4ab15b3f = {
+			code: "foo",
+			options: [{ globals: [{ name: "foo" }] }],
+			languageOptions: {
+				globals: { foo: "readonly" },
+			},
+			errors: [
+				{
+					messageId: "defaultMessage",
+					data: { name: "foo" },
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"7719648938ec954cd37dde068f95ab6556c875abd911ebfbd184f6610c062813","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_d174474456a403e4ce72","initializer_sha256":"d30f1eb07ebed5ffb61787ef2abb58d50ccd274150b8e5cebee43a244465f314","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/prefer-exponentiation-operator.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":10164,"source_start_byte":9834}
+const __structured_javascript_state_d174474456a403e4ce72 = {
+			code: "Math.pow(a, b) + Math.pow(c,\n d)",
+			output: "a**b + c**d",
+			errors: [
+				{
+					messageId: "useExponentiation",
+					line: 1,
+					column: 1,
+					endLine: 1,
+					endColumn: 15,
+				},
+				{
+					messageId: "useExponentiation",
+					line: 1,
+					column: 18,
+					endLine: 2,
+					endColumn: 4,
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"4e2095170b9d4cfd1c0e2b3d7d96a7e30fb1dd8a47ce96681a7a61493e0a0d52","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_91aaafe639144b592931","initializer_sha256":"5ecb3542867ec331c05177b710ecf724dd03fadfdf99c0abf1038a8f8f9b7ef7","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-extra-parens.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":97713,"source_start_byte":97412}
+const __structured_javascript_state_91aaafe639144b592931 = {
+			code: "if (/** @type {Compiler | MultiCompiler} */(options).hooks) console.log('good');",
+			output: "if (/** @type {Compiler | MultiCompiler} */options.hooks) console.log('good');",
+			options: ["all", { allowParensAfterCommentPattern: "invalid" }],
+			errors: [{ messageId: "unexpected" }],
+		};
+
+// @structured-javascript-source {"binding":"Template.indent","code_sha256":"2594a99465a2269381d4e7a8045b8c93780eaae297c2b9c4a2c625b1b22b6f7c","commit":"2043f6e66e87a10e774ca200a5d0636a0a3f9aa3","id":"jssstate_0d81145e7ca15b3e7ba1","initializer_sha256":"9c759e333871e55723446d849e4dacf6aa53a0cca4fb549218a8c1f9f88c4612","license":"MIT","native_features":["single_quoted_string"],"path":"lib/node/ReadFileChunkLoadingRuntimeModule.js","repository":"webpack/webpack","repository_url":"https://github.com/webpack/webpack","source_end_byte":10284,"source_start_byte":10155}
+const __structured_javascript_state_0d81145e7ca15b3e7ba1 = [
+										'if(["MODULE_NOT_FOUND", "ENOENT"].includes(err.code)) return resolve();',
+										"return reject(err);"
+									];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"73f419e0ee6337ea4f1a0e1eeea381653bee5508c27fb59e9f9fe73762206eb5","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_06b9ee0eeadf70f0c970","initializer_sha256":"fc0abc80955593ee63a7e82a1b42d375c42a2901593b9cd34d9644aceb4ef7af","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/semi.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":46806,"source_start_byte":46530}
+const __structured_javascript_state_06b9ee0eeadf70f0c970 = {
+			code: "export var foo;",
+			output: "export var foo",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 6, sourceType: "module" },
+			errors: [
+				{
+					messageId: "extraSemi",
+					line: 1,
+					column: 15,
+					endLine: 1,
+					endColumn: 16,
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"overrideAll.xanchor.description","code_sha256":"f00899f066693af81364ef84cceb37772aafe82b4d67a5001b610329c49d7900","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_afdd26b3ef4a2d58a05b","initializer_sha256":"437f29c25a9938ea41b6ab736e152e0a99249f277ef1e7cad5997a7b0e28dfd8","license":"MIT","native_features":["single_quoted_string"],"path":"src/components/colorbar/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":3231,"source_start_byte":2922}
+const __structured_javascript_state_afdd26b3ef4a2d58a05b = [
+            'Sets this color bar\'s horizontal position anchor.',
+            'This anchor binds the `x` position to the *left*, *center*',
+            'or *right* of the color bar.',
+            'Defaults to *left* when `orientation` is *v* and',
+            '*center* when `orientation` is *h*.'
+        ];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"c958f2865e2d60ca566e1416f661af641e624d8daaceeb4306d96b7b19fc8cdf","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_36c005691ed994e55707","initializer_sha256":"e32cf5239e1ce2daa962ffca8678617507a047911bb3b75dfff6c37564e37553","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/curly.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":13413,"source_start_byte":13096}
+const __structured_javascript_state_36c005691ed994e55707 = {
+			code: "for (var foo of bar) console.log(foo)",
+			output: "for (var foo of bar) {console.log(foo)}",
+			languageOptions: { ecmaVersion: 6 },
+			errors: [
+				{
+					messageId: "missingCurlyAfter",
+					data: { name: "for-of" },
+					line: 1,
+					column: 22,
+					endLine: 1,
+					endColumn: 38,
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"74e6caf1d51c37a9f56b7c959ccbb610a5e47a06ecbafae44373df57e2a84070","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_33f1686d5b6deb28b6eb","initializer_sha256":"d7505ce3db16b789fcc402c428394281a9be9e298a3a122982e37f6357f2fabe","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-extra-parens.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":86126,"source_start_byte":85825}
+const __structured_javascript_state_33f1686d5b6deb28b6eb = {
+			code: "for (let a = (b in c), d = () => { for ((x && (e in f)); ;); for ((g in h); ;); }; ;); for((i in j); ;);",
+			output: "for (let a = (b in c), d = () => { for ((x && e in f); ;); for ((g in h); ;); }; ;); for((i in j); ;);",
+			errors: [
+				{
+					messageId: "unexpected",
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"f4e77339f6f35be911cc3930b416a0f1e1b26110dfcb7d8119e27e9016263d1c","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_28a3913f8e17dc5ca5da","initializer_sha256":"2984ec6bbfbec6bd511844e4c6d76ee9838445eb2a4e2f96ee4e73a69e813d5f","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/func-call-spacing.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":9238,"source_start_byte":9036}
+const __structured_javascript_state_28a3913f8e17dc5ca5da = {
+			code: "import (source);",
+			output: "import(source);",
+			options: ["never"],
+			languageOptions: { ecmaVersion: 2020 },
+			errors: [
+				{
+					messageId: "unexpectedWhitespace",
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"gd.layout.xaxis.rangebreaks","code_sha256":"a6006329f27d959390f173bd1769532851c303a3a5e02533d952cb99ed484b4a","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_52a25e1ea9c6e6ff1eec","initializer_sha256":"c86a638395cc54366c1cf7290aeb0f939b7178cf57bfece67dd6bab4961cf896","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/axes_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":226752,"source_start_byte":226386}
+const __structured_javascript_state_52a25e1ea9c6e6ff1eec = [
+                        {bounds: [
+                            '1970-01-01 00:00:00.011',
+                            '1970-01-01 00:00:00.089'
+                        ]},
+                        {bounds: [
+                            '1970-01-01 00:00:00.101',
+                            '1970-01-01 00:00:00.189'
+                        ]}
+                    ];
+
+// @structured-javascript-source {"binding":"Plotly.newPlot","code_sha256":"2ea601938b978ddbb3aa673c25cd3c369e1fa709d045dbc2bab7b3cb4821e1de","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_ecf4ca153f931b50ba46","initializer_sha256":"152f2dd68d9157b5298d48dc08141b53ff3d81eac62fed6b127dcb82429956ac","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/scatter_marker_line_dash_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":3205,"source_start_byte":2935}
+const __structured_javascript_state_ecf4ca153f931b50ba46 = [{
+            mode: 'markers',
+            x: [1, 2, 3],
+            y: [1, 2, 3],
+            marker: {
+                line: {
+                    color: 'red',
+                    width: 2,
+                    dash: 'solid'
+                }
+            }
+        }];
+
+// @structured-javascript-source {"binding":"jasmine.objectContaining","code_sha256":"3c9e84a7c057d5ba504c1a732568312bf5ebf9c5728cb1e9cc950ccf869aa2b4","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_712783d9606cbe2be597","initializer_sha256":"8dc55f74c811fa182631b5cae2ab0ecf0682794c320191a8fd996ce16999e368","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/updatemenus_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":5866,"source_start_byte":5728}
+const __structured_javascript_state_712783d9606cbe2be597 = {
+            visible: true,
+            method: 'skip',
+            label: '',
+            execute: true,
+            _index: 0
+        };
+
+// @structured-javascript-source {"binding":"Template.indent","code_sha256":"62040294144c939632205b41107d3e5c4c86b7e51d202a934101d4f0c98552ca","commit":"2043f6e66e87a10e774ca200a5d0636a0a3f9aa3","id":"jssstate_75dedfb37e1395d71c2f","initializer_sha256":"005a85a14b5d307ecbabf09fd2e0abfc0bca2065abeaf6c659a4e32b04df18b2","license":"MIT","native_features":["comment"],"path":"lib/runtime/MakeDeferredNamespaceObjectRuntime.js","repository":"webpack/webpack","repository_url":"https://github.com/webpack/webpack","source_end_byte":15962,"source_start_byte":14934}
+const __structured_javascript_state_75dedfb37e1395d71c2f = [
+					// Drop only the read-side traps after init: with the
+					// resolved namespace's own keys mirrored onto
+					// `ns_target` below, the default `Reflect` behavior
+					// returns the right values via the live-binding
+					// getters, so we no longer need to intercept `get` /
+					// `has` / `ownKeys` / `getOwnPropertyDescriptor`.
+					//
+					// The mutation traps (`set`, `deleteProperty`,
+					// `defineProperty`) are kept because per the TC39
+					// import-defer spec, `[[Set]]` / `[[Delete]]` /
+					// `[[DefineOwnProperty]]` on a Deferred Module
+					// Namespace Exotic Object never succeed — and the
+					// proxy target itself remains extensible
+					// (architecturally we cannot freeze it up-front),
+					// so without these traps `ns.notExported = "x"`
+					// after evaluation would silently create a property
+					// on the target instead of returning false.
+					"delete handler.get;",
+					"delete handler.has;",
+					"delete handler.ownKeys;",
+					"delete handler.getOwnPropertyDescriptor;"
+				];
+
+// @structured-javascript-source {"binding":"code.results","code_sha256":"4d91c803def60f6600aaaad6ddccd687596efdfcb82b05bf2127f59b4dd47dbe","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_68134d5328f3c8e7489b","initializer_sha256":"64a79e3840ef99c5ae3a62b7b223190c28f7afa6b5bc3e79e44fd3b855bb0e9f","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/cli-engine/formatters/html.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":9943,"source_start_byte":9530}
+const __structured_javascript_state_68134d5328f3c8e7489b = [
+				{
+					filePath: "foo.js",
+					errorCount: 1,
+					warningCount: 1,
+					messages: [
+						{
+							message: "Unexpected foo.",
+							severity: 2,
+							line: 5,
+							column: 10,
+							ruleId: "foo",
+							source: "foo",
+						},
+						{
+							message: "Unexpected bar.",
+							severity: 1,
+							line: 6,
+							column: 11,
+							ruleId: "bar",
+							source: "bar",
+						},
+					],
+				},
+			];
+
+Question
+In state jssstate_c14523dc6ddedddea935 (source state label "extendFlat.lightposition"), object at property path extendFlat.lightposition.y, return these property values in the listed order: max, valType, min, dflt. Answer with one value per line and no labels.

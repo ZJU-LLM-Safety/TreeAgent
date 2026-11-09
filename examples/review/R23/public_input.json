@@ -1,0 +1,11 @@
+{
+  "uid": "json_subset_dev_32k_conditional_count_000000",
+  "context_format": "json",
+  "instructions": "Answer using only the supplied data.\n\nonly the integer count",
+  "question": "How many cars have value-for-money rating of at least 8.1?",
+  "input": "How many cars have value-for-money rating of at least 8.1?",
+  "task": "conditional_count",
+  "input_sha256": "92be872c6d979196df5bd2a9dac2296a55af52363d0e8ff83a6fd5db73278a6a",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

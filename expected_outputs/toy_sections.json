@@ -1,0 +1,243 @@
+{
+  "formal_model_tokenizer": false,
+  "mode": "deterministic_character_tokenizer_check",
+  "sections": [
+    {
+      "ancestor_paths": [
+        "$",
+        "$.records"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 72,
+      "candidate_budgets": [
+        72,
+        89,
+        98,
+        99,
+        100,
+        102,
+        107,
+        143
+      ],
+      "closing_paths": [
+        "$.records[0]",
+        "$.records[0].account",
+        "$.records[0].region",
+        "$.records[0].balance"
+      ],
+      "content_text": "{\"account\":\"alpha\",\"region\":\"north\",\"balance\":90}",
+      "content_tokens": 49,
+      "context_format": "json",
+      "count_match_delta": 0,
+      "count_match_exact": true,
+      "covered_paths": [
+        "$.records[0]"
+      ],
+      "document_order_index": 0,
+      "method": "treeagent",
+      "parent_path": "$.records",
+      "path": "$.records[0]",
+      "path_parts": [
+        "records",
+        0
+      ],
+      "path_text": "<path>\n$.records[0]\n</path>",
+      "path_tokens": 27,
+      "raw_char_end": 61,
+      "raw_char_start": 12,
+      "raw_text": "{\"account\":\"alpha\",\"region\":\"north\",\"balance\":90}",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [],
+      "scope_parent_paths": {
+        "$": null,
+        "$.records": "$",
+        "$.records[0]": "$.records",
+        "$.records[0].account": "$.records[0]",
+        "$.records[0].balance": "$.records[0]",
+        "$.records[0].region": "$.records[0]"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 100,
+      "sibling_range": null,
+      "source_byte_end": null,
+      "source_byte_start": null,
+      "step_id": 1,
+      "target_flat_sections": 3,
+      "text": "{\"account\":\"alpha\",\"region\":\"north\",\"balance\":90}",
+      "total_tokens": 76,
+      "traversal_order_index": 0,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 143,
+      "unit_path": "$.records[0]",
+      "wrapper_tokens": 0
+    },
+    {
+      "ancestor_paths": [
+        "$",
+        "$.records"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 72,
+      "candidate_budgets": [
+        72,
+        89,
+        98,
+        99,
+        100,
+        102,
+        107,
+        143
+      ],
+      "closing_paths": [
+        "$.records",
+        "$.records[1]",
+        "$.records[1].account",
+        "$.records[1].region",
+        "$.records[1].balance",
+        "$.records[2]",
+        "$.records[2].account",
+        "$.records[2].region",
+        "$.records[2].balance"
+      ],
+      "content_text": "[{\"account\":\"beta\",\"region\":\"south\",\"balance\":120},{\"account\":\"gamma\",\"region\":\"west\",\"balance\":75}]",
+      "content_tokens": 100,
+      "context_format": "json",
+      "count_match_delta": 0,
+      "count_match_exact": true,
+      "covered_paths": [
+        "$.records[1]",
+        "$.records[2]"
+      ],
+      "document_order_index": 1,
+      "method": "treeagent",
+      "parent_path": "$.records",
+      "path": "$.records::children[1,2]",
+      "path_parts": [
+        "records"
+      ],
+      "path_text": "<path>\n$.records::children[1,2]\n</path>",
+      "path_tokens": 39,
+      "raw_char_end": 160,
+      "raw_char_start": 62,
+      "raw_text": "[{\"account\":\"beta\",\"region\":\"south\",\"balance\":120},{\"account\":\"gamma\",\"region\":\"west\",\"balance\":75}]",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [
+        1
+      ],
+      "scope_parent_paths": {
+        "$": null,
+        "$.records": "$",
+        "$.records[1]": "$.records",
+        "$.records[1].account": "$.records[1]",
+        "$.records[1].balance": "$.records[1]",
+        "$.records[1].region": "$.records[1]",
+        "$.records[2]": "$.records",
+        "$.records[2].account": "$.records[2]",
+        "$.records[2].balance": "$.records[2]",
+        "$.records[2].region": "$.records[2]"
+      },
+      "section_type": "siblings",
+      "selected_tree_budget": 100,
+      "sibling_range": [
+        1,
+        2
+      ],
+      "source_byte_end": null,
+      "source_byte_start": null,
+      "step_id": 2,
+      "target_flat_sections": 3,
+      "text": "[{\"account\":\"beta\",\"region\":\"south\",\"balance\":120},{\"account\":\"gamma\",\"region\":\"west\",\"balance\":75}]",
+      "total_tokens": 139,
+      "traversal_order_index": 1,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 143,
+      "unit_path": "$.records::children[1,2]",
+      "wrapper_tokens": 0
+    },
+    {
+      "ancestor_paths": [
+        "$"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 72,
+      "candidate_budgets": [
+        72,
+        89,
+        98,
+        99,
+        100,
+        102,
+        107,
+        143
+      ],
+      "closing_paths": [
+        "$",
+        "$.metadata",
+        "$.metadata.currency",
+        "$.metadata.snapshot"
+      ],
+      "content_text": "{\"currency\":\"USD\",\"snapshot\":\"fixture\"}",
+      "content_tokens": 39,
+      "context_format": "json",
+      "count_match_delta": 0,
+      "count_match_exact": true,
+      "covered_paths": [
+        "$.metadata"
+      ],
+      "document_order_index": 2,
+      "method": "treeagent",
+      "parent_path": "$",
+      "path": "$.metadata",
+      "path_parts": [
+        "metadata"
+      ],
+      "path_text": "<path>\n$.metadata\n</path>",
+      "path_tokens": 25,
+      "raw_char_end": 212,
+      "raw_char_start": 162,
+      "raw_text": "{\"currency\":\"USD\",\"snapshot\":\"fixture\"}",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [
+        2
+      ],
+      "scope_parent_paths": {
+        "$": null,
+        "$.metadata": "$",
+        "$.metadata.currency": "$.metadata",
+        "$.metadata.snapshot": "$.metadata"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 100,
+      "sibling_range": null,
+      "source_byte_end": null,
+      "source_byte_start": null,
+      "step_id": 3,
+      "target_flat_sections": 3,
+      "text": "{\"currency\":\"USD\",\"snapshot\":\"fixture\"}",
+      "total_tokens": 64,
+      "traversal_order_index": 2,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 143,
+      "unit_path": "$.metadata",
+      "wrapper_tokens": 0
+    }
+  ],
+  "stats": {
+    "actual_tree_sections": 3,
+    "base_section_size": 72,
+    "closing_scope_events": 17,
+    "content_tokens": 188,
+    "count_match_delta": 0,
+    "count_match_exact": true,
+    "num_sections": 3,
+    "path_token_overhead": 91,
+    "selected_tree_budget": 100,
+    "target_flat_sections": 3,
+    "total_tokens": 279,
+    "tree_budget_max": 143,
+    "wrapper_token_overhead": 0
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "path": "data/json/source_examples.jsonl",
+  "records": [
+    {
+      "uid": "cq_json_6d5463fc7298de065baec223_16000",
+      "provider": "Crossref",
+      "provider_group": "Crossref",
+      "task": "record_field_lookup",
+      "input_sha256": "fdc2f0164a1f7269a81c5be8e19deeb54884a0deef289a2580ae8106ce56147d",
+      "package_line_sha256": "8dee8f2a092e07e87f3f88740aabf1b4b8ef7cf8aae275fee4c5be9a0b44e1d9",
+      "documents": [
+        {
+          "sha256": "fdc2f0164a1f7269a81c5be8e19deeb54884a0deef289a2580ae8106ce56147d",
+          "utf8_bytes": 37129,
+          "endpoint": "https://api.crossref.org/works"
+        }
+      ],
+      "native_origin_uid": "query_v5_cf5e54e8c5a0ecdf3c030cfb_16000",
+      "question_version": "concise_business_v2"
+    },
+    {
+      "uid": "cq_json_432c48f34335e51285de75c9_16000",
+      "provider": "USGS",
+      "provider_group": "USGS",
+      "task": "multi_record_field_2",
+      "input_sha256": "0c0ca2b017c1dbc4d9a4fcbeeb3ab9d6e3e70bfa71326584bebc018cae766f4f",
+      "package_line_sha256": "135a66db524bc91635803e5556d26c823e719688ed6f78c0ad83e2147cefbfac",
+      "documents": [
+        {
+          "sha256": "44402357b62b62398403329d0bc4c2ca2d4b74f1dfb90687e31b61679497d648",
+          "utf8_bytes": 18414,
+          "endpoint": "https://earthquake.usgs.gov/fdsnws/event/1/query"
+        },
+        {
+          "sha256": "543e852ae076c3c6a1242a0b0ec56e0fc62bef070059d4076e0dcf9ae059ad22",
+          "utf8_bytes": 19167,
+          "endpoint": "https://earthquake.usgs.gov/fdsnws/event/1/query"
+        }
+      ],
+      "native_origin_uid": "query_v5_16a98fc3e79e93c404ee4fa4_16000",
+      "question_version": "concise_business_v2"
+    },
+    {
+      "uid": "cq_json_1c697d98180582af13549cdd_16000",
+      "provider": "NVD",
+      "provider_group": "NVD",
+      "task": "multi_record_field_4",
+      "input_sha256": "d8711aa4f12e5a747c2405c7795659555ee12df56230ea4bdfc38d920b887f58",
+      "package_line_sha256": "9e7789b4352f74ed1de5925bd4f01bc0cde689f009b740f2c6a266be1cd82c02",
+      "documents": [
+        {
+          "sha256": "d8711aa4f12e5a747c2405c7795659555ee12df56230ea4bdfc38d920b887f58",
+          "utf8_bytes": 37734,
+          "endpoint": "https://services.nvd.nist.gov/rest/json/cves/2.0"
+        }
+      ],
+      "native_origin_uid": "query_v5_631be0d872aac0c1a96d80ac_16000",
+      "question_version": "concise_business_v2"
+    },
+    {
+      "uid": "cq_json_e9027cda637cf25c050b8d5f_16000",
+      "provider": "ClinicalTrials.gov",
+      "provider_group": "NIH",
+      "task": "record_multi_field_2",
+      "input_sha256": "eb32f9323c7776bc071c4668fc558b38d317d7d52b7b4a34a45f9d3b21d0a4a0",
+      "package_line_sha256": "a7cc5bc47ecbe2648f5181b01e27792de8687cb5c47d868d2de32c6bcb224419",
+      "documents": [
+        {
+          "sha256": "eb32f9323c7776bc071c4668fc558b38d317d7d52b7b4a34a45f9d3b21d0a4a0",
+          "utf8_bytes": 54617,
+          "endpoint": "https://clinicaltrials.gov/api/v2/studies"
+        }
+      ],
+      "native_origin_uid": "query_v5_d701c40f28f3eab95a13a9c7_16000",
+      "question_version": "concise_business_v2"
+    },
+    {
+      "uid": "cq_json_c3d48dabbf5cca1bc3c62316_16000",
+      "provider": "NIH_RePORTER",
+      "provider_group": "NIH",
+      "task": "record_multi_field_4",
+      "input_sha256": "fdbf1cb98453738b27707e9beb52718593f323af6fed94db15c6208292c1bcd3",
+      "package_line_sha256": "278537ee0abc0e17cfd37d7dd94b0ced92869a051015b490b07c9db4998c813d",
+      "documents": [
+        {
+          "sha256": "fdbf1cb98453738b27707e9beb52718593f323af6fed94db15c6208292c1bcd3",
+          "utf8_bytes": 53013,
+          "endpoint": "https://api.reporter.nih.gov/v2/projects/search"
+        }
+      ],
+      "native_origin_uid": "query_v5_efcc9de3295bdae3ddf8798e_16000",
+      "question_version": "concise_business_v2"
+    },
+    {
+      "uid": "cq_json_3d9e26a01404926360b45930_16000",
+      "provider": "GBIF",
+      "provider_group": "GBIF",
+      "task": "conditional_count",
+      "input_sha256": "3691f6c36411ab13153c5578b68912db8c45ddce1dd24af049887f89487fc7e4",
+      "package_line_sha256": "89eb486092e574a550f75e684ffa010d5c7b729079f66870174a6c4cb3dfceb2",
+      "documents": [
+        {
+          "sha256": "3691f6c36411ab13153c5578b68912db8c45ddce1dd24af049887f89487fc7e4",
+          "utf8_bytes": 39305,
+          "endpoint": "https://api.gbif.org/v1/occurrence/search"
+        }
+      ],
+      "native_origin_uid": "query_v5_59ea2916db305096a2e15e42_16000",
+      "question_version": "concise_business_v2"
+    },
+    {
+      "uid": "cq_json_bfd7593136832cf7355fe1fe_16000",
+      "provider": "ContractsFinder",
+      "provider_group": "ContractsFinder",
+      "task": "groupby_topk_values",
+      "input_sha256": "fdb22121242a69a679a612316579c140feaaee57773b0c14afcff271d133e919",
+      "package_line_sha256": "806bc619441a42dd0f827d2af9fcb33a501c97f78f696b9ff2064360927e7e39",
+      "documents": [
+        {
+          "sha256": "fdb22121242a69a679a612316579c140feaaee57773b0c14afcff271d133e919",
+          "utf8_bytes": 68454,
+          "endpoint": "https://www.contractsfinder.service.gov.uk/Published/Notices/OCDS/Search"
+        }
+      ],
+      "native_origin_uid": "query_v5_4b501a86b1ce8932b626bb13_16000",
+      "question_version": "concise_business_v2"
+    },
+    {
+      "uid": "cq_json_a0cbcc0e6635c83c8fd873dc_16000",
+      "provider": "USAspending",
+      "provider_group": "USAspending",
+      "task": "numeric_extreme",
+      "input_sha256": "53c8c8bf1bf54ed4d3c99760aad617fd968dc16e2a013ebcdd3b2c792840fb8d",
+      "package_line_sha256": "b166da9d278d3b950aaf61716327d004c73d0a25f392608276b0d6d4212d2f8f",
+      "documents": [
+        {
+          "sha256": "53c8c8bf1bf54ed4d3c99760aad617fd968dc16e2a013ebcdd3b2c792840fb8d",
+          "utf8_bytes": 48249,
+          "endpoint": "https://api.usaspending.gov/api/v2/search/spending_by_award/"
+        }
+      ],
+      "native_origin_uid": "query_v5_debcdb7e9d46770dcc931023_16000",
+      "question_version": "concise_business_v2"
+    }
+  ],
+  "record_count": 8,
+  "source_group_count": 7,
+  "separator": "\n"
+}

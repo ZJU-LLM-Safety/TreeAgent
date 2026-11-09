@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+only the integer count
+
+Data
+Across all semantic HTML records in the corpus, how many records have Release year equal to (2019)?
+
+Question
+Across the movie records in the supplied HTML documents, how many have a displayed Release year equal to "(2019)"? Count each movie record separately.

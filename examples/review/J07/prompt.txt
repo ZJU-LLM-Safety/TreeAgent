@@ -1,0 +1,218 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line, without counts
+
+Data
+// @structured-javascript-source {"binding":"OPTIONS_SCHEMA","code_sha256":"0b583665b6272d02d71801c04baaa4ef6632e1a2f8ef3cce34013926179ba7f6","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_f0acc522d1ff0c66e939","initializer_sha256":"2715916a4ce93a42f91db761d5046f83e62cd5d216f4fb66e22376f192b25c7c","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"lib/rules/max-len.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":921,"source_start_byte":364}
+const __structured_javascript_state_f0acc522d1ff0c66e939 = {
+	type: "object",
+	properties: {
+		code: {
+			type: "integer",
+			minimum: 0,
+		},
+		comments: {
+			type: "integer",
+			minimum: 0,
+		},
+		tabWidth: {
+			type: "integer",
+			minimum: 0,
+		},
+		ignorePattern: {
+			type: "string",
+		},
+		ignoreComments: {
+			type: "boolean",
+		},
+		ignoreStrings: {
+			type: "boolean",
+		},
+		ignoreUrls: {
+			type: "boolean",
+		},
+		ignoreTemplateLiterals: {
+			type: "boolean",
+		},
+		ignoreRegExpLiterals: {
+			type: "boolean",
+		},
+		ignoreTrailingComments: {
+			type: "boolean",
+		},
+	},
+	additionalProperties: false,
+};
+
+// @structured-javascript-source {"binding":"mx_worley_noise_vec3_style_0","code_sha256":"dbf86485620c29dbf7ccc55aad629c4c03f819625e76f2b5288cb6a6fe002f8f","commit":"27e70ddf91e95c40d03bca7b2bac5a212e4c4151","id":"jssstate_5d2ad22fc2f12c6c5758","initializer_sha256":"5e21368608e85811509170ef335915869aa4dff0b51e59fd76c27c0c2d725913","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"src/nodes/materialx/MaterialXNoise.js","repository":"mrdoob/three.js","repository_url":"https://github.com/mrdoob/three.js","source_end_byte":46526,"source_start_byte":46319}
+const __structured_javascript_state_5d2ad22fc2f12c6c5758 = {
+	name: 'mx_worley_noise_vec3_style_0',
+	type: 'vec3',
+	inputs: [
+		{ name: 'p', type: 'vec2' },
+		{ name: 'jitter', type: 'float' },
+		{ name: 'style', type: 'int' },
+		{ name: 'metric', type: 'int' }
+	]
+};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"6881048d0de5a1654c20463c825f084efae0970b8f8700428d74e0e098975be1","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_44e7b61475bc83df7d5b","initializer_sha256":"ff16b05cf3fd600685352bfb68d603e9c7bf9670f0e02fe495e251b25a8584e1","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-bracket-newline.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":4106,"source_start_byte":4016}
+const __structured_javascript_state_44e7b61475bc83df7d5b = {
+			code: "var foo = [\n1, 2\n// any comment\n];",
+			options: [{ multiline: true }],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"badfc0650577dfcac39833b91ce8c330fe6b7492e69495c3a8f61d4058d23c7e","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_97193d00ec7c1ef1c792","initializer_sha256":"0a476d4218989ebc1df49adb8faf50d6064204d8bb4bba1594c0e9663f1245fd","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-bracket-spacing.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":6169,"source_start_byte":6038}
+const __structured_javascript_state_97193d00ec7c1ef1c792 = {
+			code: "[{ x, y }, z ] = arr;",
+			options: ["always", { objectsInArrays: false }],
+			languageOptions: { ecmaVersion: 6 },
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"8b47c945c192cda2a114f5c10eeb9db8150ac5d7a03ba2d29c94daf9a0f444cb","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_80b386686cbf76d83478","initializer_sha256":"0c95a136a070c9774d969a9cb372de9ffdc76a858d95b9944df337901f15e1bf","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-global-assign.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":1243,"source_start_byte":1094}
+const __structured_javascript_state_80b386686cbf76d83478 = {
+			code: "String = 'hello world';",
+			errors: [
+				{
+					messageId: "globalShouldNotBeModified",
+					data: { name: "String" },
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"6fbbd3f8d5e6759fa1fe491377b86ed80c52ea7cd232ed9e130417bceadc0721","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_6cc08a66032b70a18b2f","initializer_sha256":"c4c97f74ac617012f15fe0ecc1965eb660e5403df1f98012dffe7050a323e49d","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-useless-escape.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":4298,"source_start_byte":4216}
+const __structured_javascript_state_6cc08a66032b70a18b2f = {
+			code: "var foo = `\\${{${foo}`;",
+			languageOptions: { ecmaVersion: 6 },
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"aa9c59e6f6754c0d9e9178618d1827e17ac2aca15ca46006b32261df6c65deea","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_9f7ac40fe06fa4c5cd6b","initializer_sha256":"0ea9b38901a999008a6dfdcc4f86d6631347f5ec9a2a354454db41938d5a4b56","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-implicit-globals.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":7972,"source_start_byte":7814}
+const __structured_javascript_state_9f7ac40fe06fa4c5cd6b = {
+			code: "(function() { const foo = 1; let bar; class Baz {} })();",
+			options: [{ lexicalBindings: true }],
+			languageOptions: { ecmaVersion: 2015 },
+		};
+
+// @structured-javascript-source {"binding":"test","code_sha256":"9b6a059c858d14449998e005b3dd4ae31169640b54468c5fb0f41d25e74a4322","commit":"2043f6e66e87a10e774ca200a5d0636a0a3f9aa3","id":"jssstate_e91ceebc78f397594596","initializer_sha256":"5d0f46e2674ba8c170526d4254f01e759dcf45184701768bc7f2369f77516f29","license":"MIT","native_features":["unquoted_property_key"],"path":"test/Cli.basictest.js","repository":"webpack/webpack","repository_url":"https://github.com/webpack/webpack","source_end_byte":8141,"source_start_byte":7835}
+const __structured_javascript_state_e91ceebc78f397594596 = {
+				"watch-options-aggregate-timeout": ".25",
+				"watch-options-poll": "1e2",
+				"output-chunk-load-timeout": "5.",
+				parallelism: "1e+2",
+				"performance-max-asset-size": "1.5e3",
+				"performance-max-entrypoint-size": "2e-1",
+				"stats-assets-space": "10E+1",
+				"stats-errors-space": "+.5"
+			};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid.errors","code_sha256":"269541566aaeb6cdd4b5d5435ea11d48b45788ba03c9bdb9284f34381d4c22ae","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_aaf76422db1223f6bb5d","initializer_sha256":"d0f668dbb90263dd832357f6c3d903f5a7316692399d8f685ff9185c84979eb4","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/prefer-object-spread.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":16168,"source_start_byte":16082}
+const __structured_javascript_state_aaf76422db1223f6bb5d = [
+				{
+					messageId: "useSpreadMessage",
+					line: 2,
+					column: 33,
+				},
+			];
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"dd2d8e588b89b672c1bafe69cfe78af5af0723622843d5462982001b6e9883da","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_03fe4087c028618607b3","initializer_sha256":"f983bde4bca3566310e37f43fc8becdadc6038b0e3dc14d0391777335c8d37d0","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-obj-calls.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":7933,"source_start_byte":7781}
+const __structured_javascript_state_03fe4087c028618607b3 = {
+			code: "/*globals Reflect: true*/ Reflect();",
+			errors: [
+				{
+					messageId: "unexpectedCall",
+					data: { name: "Reflect" },
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"d519169e80f15432c0fce76651fbfd0eedd82252cd5e29d0e9bcdda39137e0e9","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_f764d6c8c9e4fbe8fc2b","initializer_sha256":"3c78bd9059e9b3eaa46b26ce780cdf63d483af3140b5828398a8dc187431403c","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/max-len.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":3421,"source_start_byte":3245}
+const __structured_javascript_state_f764d6c8c9e4fbe8fc2b = {
+			code: "var foo = module.exports = {}; // really long trailing comment",
+			options: [
+				40,
+				4,
+				{ ignoreComments: true, ignoreTrailingComments: false },
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid.errors","code_sha256":"6a293ecf95c5dbd8e3d8e420cf18d105db2163d1a4b745760de303a18519b5e6","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_6e68e9589620ad16b0cc","initializer_sha256":"5ea0955cf2d82c10327b0a38aa4f458f9ab779493a05e51accbd3529f00fa8f2","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-callback-return.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":34349,"source_start_byte":34053}
+const __structured_javascript_state_6e68e9589620ad16b0cc = [
+				{
+					messageId: "expectedNoReturnValue",
+					data: {
+						name: "arrow function",
+						arrayMethodName: "Array.prototype.forEach",
+					},
+					suggestions: [
+						{
+							output: "foo.forEach((x) => { return void x; })",
+							messageId: "prependVoid",
+						},
+					],
+				},
+			];
+
+// @structured-javascript-source {"binding":"ruleTesterTypeScript.run.invalid","code_sha256":"8573c8d8f739db54b40211c2ebb71a25e2e4df0299a3cdbd5504b3564875a132","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_7c6bbc09747ad6b8329e","initializer_sha256":"b559eb88665c431f02e875ef4907c675a634090958912d9707e9a6631813db4c","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-array-constructor.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":15477,"source_start_byte":15360}
+const __structured_javascript_state_7c6bbc09747ad6b8329e = {
+			code: "Array(x, y);",
+			output: "[x, y];",
+			errors: [
+				{
+					messageId: "preferLiteral",
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"Plotly.react.labels","code_sha256":"384f5957d3865644169a349796906243f572543d5b7d365416064e680d45fd6f","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_bc4624380bded0f4b327","initializer_sha256":"24b9ea7f167319524c81861b71d6c2c7b8b82a9757608b2134b1fe6adc9be2f0","license":"MIT","native_features":["single_quoted_string"],"path":"test/jasmine/tests/plot_api_react_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":71191,"source_start_byte":71111}
+const __structured_javascript_state_bc4624380bded0f4b327 = ['Eve', 'Cain', 'Seth', 'Enos', 'Noam', 'Abel', 'Awan', 'Enoch', 'Azura', 'Joe'];
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"4d410f355d970434459195069beb89591fb43f6265f0d6adeca7a5a6d871fc29","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_0b000dbbf04e377987b1","initializer_sha256":"a6df436d8e2853a73a71c37141d498d1178ac1edf328c7e92c072f15cf25a530","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/sort-keys.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":10655,"source_start_byte":10548}
+const __structured_javascript_state_0b000dbbf04e377987b1 = {
+			code: "var obj = {c:2, C:3, b_:1}",
+			options: ["desc", { natural: true, caseSensitive: false }],
+		};
+
+// @structured-javascript-source {"binding":"module.exports.meta","code_sha256":"166a61c6eea759536da8e469d1bbbb5a268ab343d27a870c3b1415e59ffbfd92","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_a610600426baeee3a506","initializer_sha256":"2aaf70cd426039450545e6947cee9ff271cd0ed8b462d9f8d52dc8f4a23e344d","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"lib/rules/handle-callback-err.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":1348,"source_start_byte":409}
+const __structured_javascript_state_a610600426baeee3a506 = {
+		deprecated: {
+			message: "Node.js rules were moved out of ESLint core.",
+			url: "https://eslint.org/docs/latest/use/migrating-to-7.0.0#deprecate-node-rules",
+			deprecatedSince: "7.0.0",
+			availableUntil: "11.0.0",
+			replacedBy: [
+				{
+					message:
+						"eslint-plugin-n now maintains deprecated Node.js-related rules.",
+					plugin: {
+						name: "eslint-plugin-n",
+						url: "https://github.com/eslint-community/eslint-plugin-n",
+					},
+					rule: {
+						name: "handle-callback-err",
+						url: "https://github.com/eslint-community/eslint-plugin-n/tree/master/docs/rules/handle-callback-err.md",
+					},
+				},
+			],
+		},
+
+		type: "suggestion",
+
+		docs: {
+			description: "Require error handling in callbacks",
+			recommended: false,
+			url: "https://eslint.org/docs/latest/rules/handle-callback-err",
+		},
+
+		schema: [
+			{
+				type: "string",
+			},
+		],
+		messages: {
+			expected: "Expected error to be handled.",
+		},
+	};
+
+Question
+Across these explicitly named JSS collections, considering all entries together, return the three most frequent type values: OPTIONS_SCHEMA.properties in state jssstate_f0acc522d1ff0c66e939; mx_worley_noise_vec3_style_0.inputs in state jssstate_5d2ad22fc2f12c6c5758. Answer with one value per line and no counts.

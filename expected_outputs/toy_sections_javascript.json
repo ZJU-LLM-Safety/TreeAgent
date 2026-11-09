@@ -1,0 +1,234 @@
+{
+  "formal_model_tokenizer": false,
+  "mode": "deterministic_character_tokenizer_check",
+  "sections": [
+    {
+      "ancestor_paths": [
+        "/",
+        "/lexical_declaration[1]"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "/lexical_declaration[1]/object[1]",
+        "/lexical_declaration[1]/object[1]/pair[1]",
+        "/lexical_declaration[1]/object[1]/pair[2]"
+      ],
+      "content_byte_end": 48,
+      "content_byte_start": 20,
+      "content_text": "{name: \"Alpha\", price: 1111}",
+      "content_tokens": 28,
+      "context_format": "javascript",
+      "count_match_delta": 1,
+      "count_match_exact": false,
+      "covered_paths": [
+        "/lexical_declaration[1]/object[1]"
+      ],
+      "document_order_index": 0,
+      "method": "treeagent",
+      "parent_path": "/lexical_declaration[1]",
+      "path": "/lexical_declaration[1]/object[1]",
+      "path_parts": [
+        "lexical_declaration[1]",
+        "object[1]"
+      ],
+      "path_text": "<path>\n/lexical_declaration[1]/object[1]\n</path>",
+      "path_tokens": 48,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": "const records = [\n  {name: \"Alpha\", price: 1111}",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [],
+      "scope_parent_paths": {
+        "/": null,
+        "/lexical_declaration[1]": "/",
+        "/lexical_declaration[1]/object[1]": "/lexical_declaration[1]",
+        "/lexical_declaration[1]/object[1]/pair[1]": "/lexical_declaration[1]/object[1]",
+        "/lexical_declaration[1]/object[1]/pair[2]": "/lexical_declaration[1]/object[1]"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 32,
+      "sibling_range": null,
+      "source_byte_end": 48,
+      "source_byte_start": 0,
+      "step_id": 1,
+      "target_flat_sections": 4,
+      "text": "const records = [\n  {name: \"Alpha\", price: 1111}",
+      "total_tokens": 96,
+      "traversal_order_index": 0,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "/lexical_declaration[1]/object[1]",
+      "wrapper_prefix": "const records = [\n  ",
+      "wrapper_suffix": "",
+      "wrapper_tokens": 20
+    },
+    {
+      "ancestor_paths": [
+        "/",
+        "/lexical_declaration[1]"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "/lexical_declaration[1]",
+        "/lexical_declaration[1]/object[2]",
+        "/lexical_declaration[1]/object[2]/pair[1]",
+        "/lexical_declaration[1]/object[2]/pair[2]"
+      ],
+      "content_byte_end": 80,
+      "content_byte_start": 52,
+      "content_text": "{name: \"Bravo\", price: 2222}",
+      "content_tokens": 28,
+      "context_format": "javascript",
+      "count_match_delta": 1,
+      "count_match_exact": false,
+      "covered_paths": [
+        "/lexical_declaration[1]/object[2]"
+      ],
+      "document_order_index": 1,
+      "method": "treeagent",
+      "parent_path": "/lexical_declaration[1]",
+      "path": "/lexical_declaration[1]/object[2]",
+      "path_parts": [
+        "lexical_declaration[1]",
+        "object[2]"
+      ],
+      "path_text": "<path>\n/lexical_declaration[1]/object[2]\n</path>",
+      "path_tokens": 48,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": ",\n  {name: \"Bravo\", price: 2222}\n];",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [
+        1
+      ],
+      "scope_parent_paths": {
+        "/": null,
+        "/lexical_declaration[1]": "/",
+        "/lexical_declaration[1]/object[2]": "/lexical_declaration[1]",
+        "/lexical_declaration[1]/object[2]/pair[1]": "/lexical_declaration[1]/object[2]",
+        "/lexical_declaration[1]/object[2]/pair[2]": "/lexical_declaration[1]/object[2]"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 32,
+      "sibling_range": null,
+      "source_byte_end": 83,
+      "source_byte_start": 48,
+      "step_id": 2,
+      "target_flat_sections": 4,
+      "text": ",\n  {name: \"Bravo\", price: 2222}\n];",
+      "total_tokens": 83,
+      "traversal_order_index": 1,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "/lexical_declaration[1]/object[2]",
+      "wrapper_prefix": ",\n  ",
+      "wrapper_suffix": "\n];",
+      "wrapper_tokens": 7
+    },
+    {
+      "ancestor_paths": [
+        "/",
+        "/lexical_declaration[2]"
+      ],
+      "atomic_overflow": false,
+      "base_section_size": 32,
+      "candidate_budgets": [
+        32,
+        33,
+        35,
+        39,
+        47,
+        63
+      ],
+      "closing_paths": [
+        "/",
+        "/lexical_declaration[2]/pair[1]",
+        "/lexical_declaration[2]"
+      ],
+      "content_byte_end": 117,
+      "content_byte_start": 102,
+      "content_text": "currency: \"USD\"",
+      "content_tokens": 15,
+      "context_format": "javascript",
+      "count_match_delta": 1,
+      "count_match_exact": false,
+      "covered_paths": [
+        "/lexical_declaration[2]/pair[1]"
+      ],
+      "document_order_index": 2,
+      "method": "treeagent",
+      "parent_path": "/lexical_declaration[2]",
+      "path": "/lexical_declaration[2]/pair[1]",
+      "path_parts": [
+        "lexical_declaration[2]",
+        "pair[1]"
+      ],
+      "path_text": "<path>\n/lexical_declaration[2]/pair[1]\n</path>",
+      "path_tokens": 46,
+      "raw_char_end": null,
+      "raw_char_start": null,
+      "raw_text": "\nconst metadata = {currency: \"USD\"};\n",
+      "raw_token_end": null,
+      "raw_token_start": null,
+      "residual_source_indices": [
+        2
+      ],
+      "scope_parent_paths": {
+        "/": null,
+        "/lexical_declaration[2]": "/",
+        "/lexical_declaration[2]/pair[1]": "/lexical_declaration[2]"
+      },
+      "section_type": "subtree",
+      "selected_tree_budget": 32,
+      "sibling_range": null,
+      "source_byte_end": 120,
+      "source_byte_start": 83,
+      "step_id": 3,
+      "target_flat_sections": 4,
+      "text": "\nconst metadata = {currency: \"USD\"};\n",
+      "total_tokens": 83,
+      "traversal_order_index": 2,
+      "traversal_strategy": "left_to_right_dfs",
+      "tree_budget_max": 63,
+      "unit_path": "/lexical_declaration[2]/pair[1]",
+      "wrapper_prefix": "\nconst metadata = {",
+      "wrapper_suffix": "};\n",
+      "wrapper_tokens": 22
+    }
+  ],
+  "stats": {
+    "actual_tree_sections": 3,
+    "base_section_size": 32,
+    "closing_scope_events": 10,
+    "content_tokens": 71,
+    "count_match_delta": 1,
+    "count_match_exact": false,
+    "num_sections": 3,
+    "path_token_overhead": 142,
+    "selected_tree_budget": 32,
+    "target_flat_sections": 4,
+    "total_tokens": 262,
+    "tree_budget_max": 63,
+    "wrapper_token_overhead": 49
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "uid": "html_websrc_v4_test_8k_record_multi_field_4_00001",
+  "context_format": "html",
+  "instructions": "Answer using only the supplied data.\n\none value per line, in the same order as the IDs or fields in the question; do not include IDs, field names, or explanations",
+  "question": "For the row where Season is CAREER on sports site 16 page 1600081, return these 4 distinct fields. Give one value per line in F1-to-F4 order, without field names or explanations. F1: 3P% F2: FT% F3: 3PA F4: 3PM",
+  "input": "For the row where Season is CAREER on sports site 16 page 1600081, return these 4 distinct fields. Give one value per line in F1-to-F4 order, without field names or explanations. F1: 3P% F2: FT% F3: 3PA F4: 3PM",
+  "task": "record_multi_field_4",
+  "input_sha256": "da122152e6ba4edf62709a4d1e2dd145f4abd2d7501690a0bddc77043f8aefe0",
+  "sample_revision": "source_preserved",
+  "metric_type": "ordered_list_str_match"
+}

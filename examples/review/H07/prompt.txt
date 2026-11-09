@@ -1,0 +1,10 @@
+Instructions
+Answer using only the supplied data.
+
+one value per line; do not include counts or explanations
+
+Data
+Across all semantic HTML records in the corpus, which three Destination values occur most often?
+
+Question
+Across the vehicle columns in the supplied HTML comparison tables, which three distinct Destination values occur most frequently? Count each vehicle column separately.

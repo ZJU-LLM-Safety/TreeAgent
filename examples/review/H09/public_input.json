@@ -1,0 +1,11 @@
+{
+  "uid": "html_websrc_v4_test_128k_record_field_lookup_00027",
+  "context_format": "html",
+  "instructions": "Answer using only the supplied data.\n\nonly the value",
+  "question": "On auto site 02 page 0200064, for the column where Horsepower @ RPM is 248 @ 5200, what is the MSRP?",
+  "input": "On auto site 02 page 0200064, for the column where Horsepower @ RPM is 248 @ 5200, what is the MSRP?",
+  "task": "record_field_lookup",
+  "input_sha256": "de7127e4ceda32069d8ed70415c47b2d22e21382ab43c28ac1d06376bd116e67",
+  "sample_revision": "source_preserved",
+  "metric_type": "accuracy_string"
+}

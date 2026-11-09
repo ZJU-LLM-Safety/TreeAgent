@@ -1,0 +1,257 @@
+Instructions
+Answer using only the supplied data.
+
+only the value
+
+Data
+// @structured-javascript-source {"binding":"extendFlat.lightposition","code_sha256":"e5243bf63ba8a2d5e5c05a6bd2033cf1faa9847daf8c07c5c33200e3d38388c2","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_c14523dc6ddedddea935","initializer_sha256":"88af751b1a049a0b18c6aaf619cbe6a067b6976aeb8424a83feb2e3243ebab18","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"src/traces/surface/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":7232,"source_start_byte":6414}
+const __structured_javascript_state_c14523dc6ddedddea935 = {
+                x: {
+                    valType: 'number',
+                    min: -1e5,
+                    max: 1e5,
+                    dflt: 10,
+                    description: 'Numeric vector, representing the X coordinate for each vertex.'
+                },
+                y: {
+                    valType: 'number',
+                    min: -1e5,
+                    max: 1e5,
+                    dflt: 1e4,
+                    description: 'Numeric vector, representing the Y coordinate for each vertex.'
+                },
+                z: {
+                    valType: 'number',
+                    min: -1e5,
+                    max: 1e5,
+                    dflt: 0,
+                    description: 'Numeric vector, representing the Z coordinate for each vertex.'
+                }
+            };
+
+// @structured-javascript-source {"binding":"module.exports.line","code_sha256":"3617af5883f3cb002643045ecc74ef01d65b07e42a0518654dcc0b0f16ba94de","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_56d39f8051f9040af94b","initializer_sha256":"1a7313529c0531851d01ed6968703a4f21b6b46e6db6c0c59b65d56fe0ab097e","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"src/traces/violin/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":3999,"source_start_byte":3591}
+const __structured_javascript_state_56d39f8051f9040af94b = {
+        color: {
+            valType: 'color',
+            editType: 'style',
+            description: 'Sets the color of line bounding the violin(s).'
+        },
+        width: {
+            valType: 'number',
+            min: 0,
+            dflt: 2,
+            editType: 'style',
+            description: 'Sets the width (in px) of line bounding the violin(s).'
+        },
+        editType: 'plot'
+    };
+
+// @structured-javascript-source {"binding":"extendFlat","code_sha256":"1cbd3caf2d9b41d88a8bdb6c04559993cde033849e5900601511ce3eda5a54f3","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_b7ad8de247378a444430","initializer_sha256":"359b2441d0ccf075e5cfd27ab7d8d69a30cc6cd0017c8076fe44dae937e1b587","license":"MIT","native_features":["comment","single_quoted_string","unquoted_property_key"],"path":"src/traces/mesh3d/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":9828,"source_start_byte":8874}
+const __structured_javascript_state_b7ad8de247378a444430 = {
+                vertexnormalsepsilon: {
+                    valType: 'number',
+                    min: 0.0,
+                    max: 1,
+                    dflt: 1e-12, // otherwise finely tessellated things eg. the brain will have no specular light reflection
+                    editType: 'calc',
+                    description:
+                        'Epsilon for vertex normals calculation avoids math issues arising from degenerate geometry.'
+                },
+                facenormalsepsilon: {
+                    valType: 'number',
+                    min: 0.0,
+                    max: 1,
+                    dflt: 1e-6, // even the brain model doesn't appear to need finer than this
+                    editType: 'calc',
+                    description:
+                        'Epsilon for face normals calculation avoids math issues arising from degenerate geometry.'
+                },
+                editType: 'calc'
+            };
+
+// @structured-javascript-source {"binding":"module.exports.line","code_sha256":"95c583af5921bd5d8a1de85e3ef537cf06627b341f5d03a52eb62455e4236a9b","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_7cbc982746b4b2608829","initializer_sha256":"65e950bb291a5bcf58864968b2ff5f9f7c2abf273bba4b4944006d161564806f","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"src/traces/box/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":13979,"source_start_byte":13575}
+const __structured_javascript_state_7cbc982746b4b2608829 = {
+        color: {
+            valType: 'color',
+            editType: 'style',
+            description: 'Sets the color of line bounding the box(es).'
+        },
+        width: {
+            valType: 'number',
+            min: 0,
+            dflt: 2,
+            editType: 'style',
+            description: 'Sets the width (in px) of line bounding the box(es).'
+        },
+        editType: 'plot'
+    };
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"965a55a11f9e5a3e3752bbb12bca62f511c378efd1f6b076d61ae09009906fc9","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_6cf6aa29aa29c8c93349","initializer_sha256":"8ca40dc022fe8c190c704cc96542151ac3566f6d4bcbf965085f5efefb95ad20","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/no-extra-boolean-cast.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":42253,"source_start_byte":42076}
+const __structured_javascript_state_6cf6aa29aa29c8c93349 = {
+			code: "!Boolean/**/(foo) || bar",
+			output: null,
+			options: [{ enforceForInnerExpressions: true }],
+			errors: [
+				{
+					messageId: "unexpectedCall",
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"Plotly.relayout","code_sha256":"f111c2d6facba8d774678a83619bba57615f6ddf58e7ac41df7f437ce73a5864","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_996f3a1356fe10aa5a3c","initializer_sha256":"74ee6d4015e32b79f4e96a3727920a850d23add80dc20f26c995bc9f99f106be","license":"MIT","native_features":["single_quoted_string"],"path":"test/jasmine/tests/cartesian_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":20385,"source_start_byte":20201}
+const __structured_javascript_state_996f3a1356fe10aa5a3c = {
+                'xaxis.domain': [0, 1],
+                'yaxis.domain': [0, 1],
+                'xaxis2.domain': [0.6, 0.9],
+                'yaxis2.domain': [0.6, 0.9]
+            };
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"42664971a62ea5276a449d5582f866cc092ebe3a9ecd6cd498831d79c7c65f54","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_16f02b32b82b37a8cba3","initializer_sha256":"38e6c8203c00c13d003fd595d7e15e08a7be64a4fe92cbb32e5a9f4d0a494b3e","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/array-bracket-spacing.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":1641,"source_start_byte":1555}
+const __structured_javascript_state_16f02b32b82b37a8cba3 = {
+			code: "var foo = [[ 1, 1 ]]",
+			options: ["always", { singleValue: false }],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"38c17fbd6c8f4c91b1ec735eb8e79c69c8335e06228e3d7ab7d957918595e49e","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_0f753d57cde552aefffb","initializer_sha256":"543f5eeb366ae2b28b268091e1621c8368bdee171cc1049124a30fa8618f3ee9","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/semi.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":38566,"source_start_byte":38289}
+const __structured_javascript_state_0f753d57cde552aefffb = {
+			code: "if (foo) {\n bar(); baz() }",
+			output: "if (foo) {\n bar(); baz(); }",
+			options: ["always", { omitLastInOneLineBlock: true }],
+			errors: [
+				{
+					messageId: "missingSemi",
+					line: 2,
+					column: 14,
+					endLine: 2,
+					endColumn: 15,
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"extendFlat.zsmooth.description","code_sha256":"6884b0b2d917b6dd6b7b4184d0527a07fba56e5b14964f2c5ed3925185a90511","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_7902fe59e4b1c2bb9896","initializer_sha256":"68cc9c43f73c5228141a12d0d070267cea0e03ba5fa97cda161ad1e52ad82279","license":"MIT","native_features":["single_quoted_string"],"path":"src/traces/image/attributes.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":1926,"source_start_byte":1765}
+const __structured_javascript_state_7902fe59e4b1c2bb9896 = [
+            'Picks a smoothing algorithm used to smooth `z` data.',
+            'This only applies for image traces that use the `source` attribute.'
+        ];
+
+// @structured-javascript-source {"binding":"_calc","code_sha256":"f8daec59884cc57d7ec0ef414225b17352cdac6e55c109d41d24edb3cb9d78e4","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_a1a33c34223450e0f89e","initializer_sha256":"b5602ed9172a231236f792ff6a0557d47b265cea7e56d831db0d9b9ded6b37ba","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/icicle_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":15930,"source_start_byte":15654}
+const __structured_javascript_state_a1a33c34223450e0f89e = {
+            marker: { colors: [1, 2, 3, 4, 5, 6, 7, 8, 9], colorscale: 'Portland' },
+            labels: ['Eve', 'Cain', 'Seth', 'Enos', 'Noam', 'Abel', 'Awan', 'Enoch', 'Azura'],
+            parents: ['', 'Eve', 'Eve', 'Seth', 'Seth', 'Eve', 'Eve', 'Awan', 'Eve']
+        };
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"f78555ef14ee261cb40f54b84851eae0390cb53d3b131bca0792d25f370489f3","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_2755b81987bb0b82202b","initializer_sha256":"9657839c218f4f273187533bdb98dd636a294d33403afb0d03e25abc71bda16b","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/logical-assignment-operators.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":35183,"source_start_byte":34961}
+const __structured_javascript_state_2755b81987bb0b82202b = {
+			code: "/* before */ if (a) a = b",
+			output: "/* before */ a &&= b",
+			options: ["always", { enforceForIfStatements: true }],
+			errors: [
+				{
+					messageId: "if",
+					data: { operator: "&&=" },
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"module.exports.meta","code_sha256":"da81386b3c46ef2e6d0761b7382613bca217b733a6bafa1e3344ff61fe924f6b","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_5f6e124177d797b13dd3","initializer_sha256":"62c9f7db3163dd26de1e6097f0fb1e14b5440eedfd6fbc3c8c3374fa234f91c0","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"lib/rules/no-plusplus.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":2316,"source_start_byte":1784}
+const __structured_javascript_state_5f6e124177d797b13dd3 = {
+		type: "suggestion",
+
+		defaultOptions: [
+			{
+				allowForLoopAfterthoughts: false,
+			},
+		],
+
+		docs: {
+			description: "Disallow the unary operators `++` and `--`",
+			recommended: false,
+			frozen: true,
+			url: "https://eslint.org/docs/latest/rules/no-plusplus",
+		},
+
+		schema: [
+			{
+				type: "object",
+				properties: {
+					allowForLoopAfterthoughts: {
+						type: "boolean",
+					},
+				},
+				additionalProperties: false,
+			},
+		],
+
+		messages: {
+			unexpectedUnaryOp: "Unary operator '{{operator}}' used.",
+		},
+	};
+
+// @structured-javascript-source {"binding":"ruleTester.run.valid","code_sha256":"92d0128435ddf1caf10632e30b714ae61515f7c49e4973f22a506b8a5c47dd42","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_44a760e231df2087d0d5","initializer_sha256":"94392d73a19d3691bed03a88fa981d7c4df97dfecc613696fed60b5e212f1ffa","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/padding-line-between-statements.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":4716,"source_start_byte":4544}
+const __structured_javascript_state_44a760e231df2087d0d5 = {
+			code: "!function(){}()\n\nfoo()",
+			options: [
+				{ blankLine: "never", prev: "*", next: "*" },
+				{ blankLine: "always", prev: "block-like", next: "*" },
+			],
+		};
+
+// @structured-javascript-source {"binding":"ruleTester.run.invalid","code_sha256":"0d457ac3b332798234c86b2b4d420271912690d14d1d7bb129e3f151f0a3cf2d","commit":"6ddf8587e5cfeeb7328332601bb76d98b8a198ea","id":"jssstate_703ee00f95e21de32747","initializer_sha256":"1f7035ea9a276c0bb10cec7c9010bf9707d16968b3075bf12974251706b934cd","license":"MIT","native_features":["trailing_comma","unquoted_property_key"],"path":"tests/lib/rules/logical-assignment-operators.js","repository":"eslint/eslint","repository_url":"https://github.com/eslint/eslint","source_end_byte":23223,"source_start_byte":22932}
+const __structured_javascript_state_703ee00f95e21de32747 = {
+			code: "a.b.c || (a.b.c = d)",
+			output: null,
+			errors: [
+				{
+					messageId: "logical",
+					data: { operator: "||=" },
+					suggestions: [
+						{
+							messageId: "convertLogical",
+							data: { operator: "||=" },
+							output: "a.b.c ||= d",
+						},
+					],
+				},
+			],
+		};
+
+// @structured-javascript-source {"binding":"calcdata","code_sha256":"2471a89b7101f88fe40f6f07d0d17203b165a715a53099b5f737f42b58d2a9cb","commit":"0af79ccbd45ffb9dcea3bad586b05ce328f4a993","id":"jssstate_4a077cdc91ba641a3bab","initializer_sha256":"d0efff869211e8529467d0caed0a33d631921bedb7f4db77afb7d6782ea87e00","license":"MIT","native_features":["single_quoted_string","unquoted_property_key"],"path":"test/jasmine/tests/legend_test.js","repository":"plotly/plotly.js","repository_url":"https://github.com/plotly/plotly.js","source_end_byte":13338,"source_start_byte":12363}
+const __structured_javascript_state_4a077cdc91ba641a3bab = [
+            [
+                {
+                    trace: {
+                        legendrank: 3,
+                        type: 'scatter',
+                        visible: true,
+                        legendgroup: 'group',
+                        showlegend: true
+                    }
+                }
+            ],
+            [
+                {
+                    trace: {
+                        legendrank: 2,
+                        type: 'bar',
+                        visible: 'legendonly',
+                        legendgroup: '',
+                        showlegend: true
+                    }
+                }
+            ],
+            [
+                {
+                    trace: {
+                        legendrank: 1,
+                        type: 'scatter',
+                        visible: true,
+                        legendgroup: 'group',
+                        showlegend: true
+                    }
+                }
+            ]
+        ];
+
+Question
+Among the dflt property values of these JSS records, return the minimum: (1) state jssstate_c14523dc6ddedddea935 (source state label "extendFlat.lightposition"), object at property path extendFlat.lightposition.x; (2) state jssstate_56d39f8051f9040af94b (source state label "module.exports.line"), object at property path module.exports.line.width; (3) state jssstate_b7ad8de247378a444430 (source state label "extendFlat"), object at property path extendFlat.vertexnormalsepsilon; (4) state jssstate_7cbc982746b4b2608829 (source state label "module.exports.line"), object at property path module.exports.line.width. Answer with only the value.
