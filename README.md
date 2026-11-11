@@ -1,15 +1,32 @@
-# TreeAgent
+# 🌳 TreeAgent
 
-Code accompanying **TreeAgent: Structure-Aware Memory Agent for Processing Long
-Hierarchical Data**. The package implements structural sectioning for JSON,
-HTML, YAML, and JavaScript, structural paths, child-to-parent memory links,
-query-guided span retrieval, answer scoring, and offline replay.
+**Structure-Aware Memory Agent for Processing Long Hierarchical Data**
 
-## Quick start
+[![arXiv](https://img.shields.io/badge/arXiv-2611.13946-b31b1b.svg)](https://arxiv.org/abs/2611.13946)
+
+Code and data examples for the [TreeAgent paper](https://arxiv.org/abs/2611.13946).
+TreeAgent is a framework for memory agents processing long hierarchical data.
+It uses input structure to guide sectioning and memory retrieval across JSON,
+HTML, YAML, and JavaScript.
+
+## 🔍 Overview
+
+TreeAgent groups content into structural sections, attaches structural paths,
+and retrieves relevant spans from linked memory states. These inputs are passed
+to the host agent's memory update procedure as it processes each section.
+
+![TreeAgent overview: structural sectioning, observation construction, and memory integration](examples/overview.svg)
+
+See [METHOD_CONTRACT.md](METHOD_CONTRACT.md) for implementation details.
+
+## 🚀 Quick start
 
 Use Python 3.10 or newer and Bash. Install the pinned native parsers if needed:
 
 ```bash
+git clone https://github.com/ZJU-LLM-Safety/TreeAgent.git
+cd TreeAgent
+
 python3 -m pip install -r requirements.txt
 bash run_checks.sh
 ```
@@ -31,28 +48,13 @@ For HTML, YAML, or JavaScript, select `--format html`, `--format yaml`, or
 tokenizer for deterministic inspection. Model integrations supply their model's
 tokenizer through the Python API.
 
-## Method
-
-- Preserve fitting subtrees and greedily group adjacent siblings.
-- Search integer budgets in `[C, 2*C-1]` with one procedure across all formats.
-  Select the best evaluated candidate using the main paper's Equation (11) and
-  tie rules. Plans record the selected budget and evaluated candidates.
-- Annotate each subtree or leaf fragment with its original path; sibling groups
-  use their parent path and an inclusive child-position range.
-- Save the updated memory after every section. Link each child's final section
-  to its parent's final section when the child is earlier. Coincident parent
-  targets combine and deduplicate incoming source indices, including at the root.
-- Rank full memory spans by query overlap, select up to four positive matches,
-  then clip each selected span to 96 tokens.
-
-`METHOD_CONTRACT.md` specifies serialization, leaf splitting, wrapper accounting,
-budget search, and retrieval order. `configs/www_method.json` records method
-settings; `configs/agent_settings.json` lists model identifiers and generation
-limits for host integration.
-`request_tokens` is the total context limit for the prompt and requested output
-combined. Use it as the serving context limit and check each host request against it.
-
 ## Integrating a memory agent
+
+Model identifiers and generation limits are in
+[`configs/agent_settings.json`](configs/agent_settings.json); TreeAgent settings
+are in [`configs/www_method.json`](configs/www_method.json). `request_tokens`
+limits the prompt and requested output combined. Use it as the serving context
+limit and check each host request against it.
 
 Supply the model tokenizer and the agent's update, auxiliary-context, and answer
 procedures:
@@ -90,9 +92,9 @@ Use their raw-window indices and token offsets for exclusion rules. Native
 retrieval enters `observation.native_context`; structurally linked memory spans
 enter `observation.residual`.
 
-## Data examples
+## 📂 Data examples
 
-Start with the [sample review guide](examples/review/README.md). It displays all
+Start with the [example guide](examples/review/README.md). It displays all
 62 questions with their mandatory instructions, complete model-input text and
 public input fields. Reference answers are linked separately. The exports are
 generated from the packaged data.
@@ -133,17 +135,30 @@ Each sample's evaluation fields specify its matching rule. See
 `code/evaluation/README.md` for scoring and `manifests/sample_revisions.json`
 for sample revisions.
 
-## Validation and packaging
+## Validation
 
 ```bash
 bash run_checks.sh
 python3 scripts/check_formats.py --all-records
 python3 scripts/check_artifact.py
-python3 scripts/build_archive.py --output /tmp/treeagent-anonymous.zip
 ```
 
-The format check plans all 62 records, including the complete multi-document
-API inputs, and validates the API examples against their source hashes.
-Add `--tokenizer /path/to/local/tokenizer`
-to check planning with a locally installed model tokenizer. `VALIDATION.md`
-describes the checks.
+The format check plans all 62 records, including the complete multi-document API
+inputs. Add `--tokenizer /path/to/local/tokenizer` to use a locally installed
+model tokenizer. See [VALIDATION.md](VALIDATION.md) for the check suite.
+
+## 📄 Citation
+
+If you use TreeAgent in your research, please cite:
+
+```bibtex
+@misc{gu2026treeagent,
+  title={{TreeAgent}: Structure-Aware Memory Agent for Processing Long Hierarchical Data},
+  author={Wei Gu and Weiwei Qi and Jiajun Tang and Tianhang Zheng and Bo Chen and Zhibo Zhang and Jinfei Liu and Kui Ren},
+  year={2026},
+  eprint={2611.13946},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2611.13946}
+}
+```
